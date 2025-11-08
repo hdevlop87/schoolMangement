@@ -1,0 +1,387 @@
+[
+  {
+    "id": "TH01",
+    "name": "Dr. Sarah Johnson",
+    "email": "sarah.johnson@school.edu",
+    "cin": "TCH2025001",
+    "gender": "F",
+    "specialization": "Mathematics",
+    "phone": "+1234567890",
+    "address": "123 University Ave, Academic City, AC 12345",
+    "salary": 65000.00,
+    "hireDate": "2024-08-15",
+    "bankAccount": "ACC123456789",
+    "emergencyContactName": "John Johnson",
+    "emergencyPhone": "+1234567891",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "MATH",
+        "class": "CP",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH02",
+    "name": "Prof. Fatima Benali",
+    "email": "fatima.benali@school.edu",
+    "cin": "TCH2025002",
+    "gender": "F",
+    "specialization": "Arabic Language",
+    "phone": "+1234567892",
+    "address": "456 Literature Lane, Academic City, AC 12346",
+    "salary": 62000.00,
+    "hireDate": "2023-08-20",
+    "bankAccount": "ACC123456790",
+    "emergencyContactName": "Ahmed Benali",
+    "emergencyPhone": "+1234567893",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "AR",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "AR",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH03",
+    "name": "Mme. Claire Dubois",
+    "email": "claire.dubois@school.edu",
+    "cin": "TCH2025003",
+    "gender": "F",
+    "specialization": "French Language",
+    "phone": "+1234567894",
+    "address": "789 Francophone Street, Academic City, AC 12347",
+    "salary": 64000.00,
+    "hireDate": "2022-09-01",
+    "bankAccount": "ACC123456791",
+    "emergencyContactName": "Pierre Dubois",
+    "emergencyPhone": "+1234567895",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "FR",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH04",
+    "name": "Dr. Michael Chen",
+    "email": "michael.chen@school.edu",
+    "cin": "TCH2025004",
+    "gender": "M",
+    "specialization": "Physics",
+    "phone": "+1234567896",
+    "address": "321 Science Hill, Academic City, AC 12348",
+    "salary": 70000.00,
+    "hireDate": "2024-01-15",
+    "bankAccount": "ACC123456792",
+    "emergencyContactName": "Lisa Chen",
+    "emergencyPhone": "+1234567897",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "PHY",
+        "class": "CP",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH05",
+    "name": "Mme. Sophie Laurent",
+    "email": "sophie.laurent@school.edu",
+    "cin": "TCH2025005",
+    "gender": "F",
+    "specialization": "French Literature",
+    "phone": "+1234567898",
+    "address": "654 Literary Way, Academic City, AC 12349",
+    "salary": 66000.00,
+    "hireDate": "2023-08-25",
+    "bankAccount": "ACC123456793",
+    "emergencyContactName": "Marc Laurent",
+    "emergencyPhone": "+1234567899",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "FR",
+        "class": "CP",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH06",
+    "name": "Dr. Amina El Kadi",
+    "email": "amina.elkadi@school.edu",
+    "cin": "TCH2025006",
+    "gender": "F",
+    "specialization": "Life Sciences",
+    "phone": "+1234567900",
+    "address": "987 Biology Boulevard, Academic City, AC 12350",
+    "salary": 68000.00,
+    "hireDate": "2024-08-10",
+    "bankAccount": "ACC123456794",
+    "emergencyContactName": "Youssef El Kadi",
+    "emergencyPhone": "+1234567901",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "SVT",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "SVT",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH07",
+    "name": "Mr. James Anderson",
+    "email": "james.anderson@school.edu",
+    "cin": "TCH2025007",
+    "gender": "M",
+    "specialization": "English Language",
+    "phone": "+1234567902",
+    "address": "147 English Avenue, Academic City, AC 12351",
+    "salary": 63000.00,
+    "hireDate": "2023-09-05",
+    "bankAccount": "ACC123456795",
+    "emergencyContactName": "Susan Anderson",
+    "emergencyPhone": "+1234567903",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "ENG",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "ENG",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH08",
+    "name": "M. Hassan Alaoui",
+    "email": "hassan.alaoui@school.edu",
+    "cin": "TCH2025008",
+    "gender": "M",
+    "specialization": "History & Geography",
+    "phone": "+1234567904",
+    "address": "258 Heritage Street, Academic City, AC 12352",
+    "salary": 61000.00,
+    "hireDate": "2024-08-01",
+    "bankAccount": "ACC123456796",
+    "emergencyContactName": "Khadija Alaoui",
+    "emergencyPhone": "+1234567905",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "HIST",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "GEO",
+        "class": "CP",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH09",
+    "name": "Mme. Rachida Benali",
+    "email": "rachida.benali@school.edu",
+    "cin": "TCH2025009",
+    "gender": "F",
+    "specialization": "Geography & Civic Education",
+    "phone": "+1234567906",
+    "address": "369 Geography Lane, Academic City, AC 12353",
+    "salary": 59000.00,
+    "hireDate": "2023-08-30",
+    "bankAccount": "ACC123456797",
+    "emergencyContactName": "Omar Benali",
+    "emergencyPhone": "+1234567907",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "GEO",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH10",
+    "name": "M. Karim Berrada",
+    "email": "karim.berrada@school.edu",
+    "cin": "TCH2025010",
+    "gender": "M",
+    "specialization": "Civic Education & History",
+    "phone": "+1234567908",
+    "address": "741 Citizenship Ave, Academic City, AC 12354",
+    "salary": 60000.00,
+    "hireDate": "2024-07-20",
+    "bankAccount": "ACC123456798",
+    "emergencyContactName": "Laila Berrada",
+    "emergencyPhone": "+1234567909",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "ECR",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "HIST",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH11",
+    "name": "Mr. Robert Taylor",
+    "email": "robert.taylor@school.edu",
+    "cin": "TCH2025011",
+    "gender": "M",
+    "specialization": "Physical Education",
+    "phone": "+1234567910",
+    "address": "852 Sports Complex, Academic City, AC 12355",
+    "salary": 55000.00,
+    "hireDate": "2023-08-15",
+    "bankAccount": "ACC123456799",
+    "emergencyContactName": "Jennifer Taylor",
+    "emergencyPhone": "+1234567911",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "PE",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "PE",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH12",
+    "name": "Mme. Isabella Martinez",
+    "email": "isabella.martinez@school.edu",
+    "cin": "TCH2025012",
+    "gender": "F",
+    "specialization": "Arts",
+    "phone": "+1234567912",
+    "address": "963 Creative Center, Academic City, AC 12356",
+    "salary": 57000.00,
+    "hireDate": "2024-08-05",
+    "bankAccount": "ACC123456800",
+    "emergencyContactName": "Carlos Martinez",
+    "emergencyPhone": "+1234567913",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "ART",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH13",
+    "name": "M. Youssef Alami",
+    "email": "youssef.alami@school.edu",
+    "cin": "TCH2025013",
+    "gender": "M",
+    "specialization": "Arts & Music",
+    "phone": "+1234567914",
+    "address": "174 Arts District, Academic City, AC 12357",
+    "salary": 58000.00,
+    "hireDate": "2023-09-10",
+    "bankAccount": "ACC123456801",
+    "emergencyContactName": "Aicha Alami",
+    "emergencyPhone": "+1234567915",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "ART",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "MUS",
+        "class": "CP",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH14",
+    "name": "Mme. Marie Rousseau",
+    "email": "marie.rousseau@school.edu",
+    "cin": "TCH2025014",
+    "gender": "F",
+    "specialization": "Music",
+    "phone": "+1234567916",
+    "address": "285 Melody Street, Academic City, AC 12358",
+    "salary": 56000.00,
+    "hireDate": "2024-08-12",
+    "bankAccount": "ACC123456802",
+    "emergencyContactName": "Jean Rousseau",
+    "emergencyPhone": "+1234567917",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "MUS",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  },
+  {
+    "id": "TH15",
+    "name": "Ms. Rachel Thompson",
+    "email": "rachel.thompson@school.edu",
+    "cin": "TCH2025015",
+    "gender": "F",
+    "specialization": "Computer Science",
+    "phone": "+1234567918",
+    "address": "396 Technology Hub, Academic City, AC 12359",
+    "salary": 72000.00,
+    "hireDate": "2024-07-25",
+    "bankAccount": "ACC123456803",
+    "emergencyContactName": "Mark Thompson",
+    "emergencyPhone": "+1234567919",
+    "status": "active",
+    "assignments": [
+      {
+        "subjects": "INFO",
+        "class": "CP",
+        "sections": ["A", "B"]
+      },
+      {
+        "subjects": "INFO",
+        "class": "CE1",
+        "sections": ["A", "B"]
+      }
+    ]
+  }
+]

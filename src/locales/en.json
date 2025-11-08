@@ -1,0 +1,1789 @@
+{
+   "languages": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "العربية",
+      "es": "Español"
+   },
+   "auth": {
+      "success": {
+         "login": "Login successful",
+         "logout": "Logout successful",
+         "register": "Registration successful. Welcome!",
+         "passwordReset": "Password reset sent",
+         "tokenGenerated": "Access token generated successfully",
+         "tokenRefreshed": "Access token refreshed successfully",
+         "refreshTokenGenerated": "Refresh token successfully generated",
+         "refreshTokenRefreshed": "Refresh token successfully refreshed",
+         "authInitialized": "Authentication initialized successfully"
+      },
+      "errors": {
+         "emailExists": "An account with this email already exists",
+         "credentialsMissing": "One or more required fields are empty",
+         "invalidCredentials": "Invalid credentials. Please try again",
+         "accessDenied": "Access denied. You do not have the rights to access this resource",
+         "emailMissing": "Email is missing. Please provide an email address",
+         "tokenExpired": "Access token has expired. Please refresh your token",
+         "tokenVerificationFailed": "Access token verification failed",
+         "tokenMissing": "Access token is missing. Please provide an access token",
+         "tokenInvalid": "Provided access token is invalid. Please obtain a valid access token",
+         "refreshTokenExpired": "Session expired. Please login again",
+         "refreshTokenVerificationFailed": "Refresh token verification failed",
+         "refreshTokenMissing": "Refresh token missing. Please provide a refresh token",
+         "refreshTokenInvalid": "Invalid refresh token. Please login again",
+         "authInitFailed": "Authentication initialization failed"
+      },
+      "validation": {
+         "emailInvalid": "Invalid email address format",
+         "passwordMinLength": "Password must be at least 8 characters long"
+      }
+   },
+   "users": {
+      "success": {
+         "retrieved": "User retrieved successfully",
+         "allRetrieved": "All users retrieved successfully",
+         "created": "User created successfully",
+         "updated": "User updated successfully",
+         "deleted": "User deleted successfully",
+         "allDeleted": "All users deleted successfully"
+      },
+      "errors": {
+         "notFound": "No user found with the provided information",
+         "adminRoleNotFound": "Admin role not found",
+         "idExists": "User ID already exists"
+      },
+      "validation": {
+         "nameMinLength": "Name must be at least 2 characters long",
+         "emailInvalid": "Invalid email address format",
+         "passwordMinLength": "Password must be at least 8 characters long",
+         "passwordConfirmationRequired": "Password confirmation is required",
+         "passwordsDoNotMatch": "Passwords don't match",
+         "roleRequired": "Please select a valid role"
+      },
+      "form": {
+         "fullName": "Full Name",
+         "fullNamePlaceholder": "Enter full name",
+         "image": "Image",
+         "email": "Email Address",
+         "emailPlaceholder": "Enter email address",
+         "password": "Password",
+         "passwordPlaceholder": "Enter password",
+         "newPassword": "New Password (leave blank to keep current)",
+         "confirmPassword": "Confirm Password",
+         "confirmPasswordPlaceholder": "Confirm password",
+         "userRole": "User Role"
+      },
+      "roles": {
+         "admin": "Admin",
+         "user": "User",
+         "moderator": "Moderator"
+      },
+      "dialogs": {
+         "createTitle": "Create New User",
+         "createButton": "Create User",
+         "viewTitle": "User Details",
+         "editTitle": "Edit User",
+         "updateButton": "Update User",
+         "deleteButton": "Delete User"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "name": "Name",
+         "email": "Email",
+         "role": "Role",
+         "status": "Status"
+      },
+      "filters": {
+         "searchByName": "Search by name...",
+         "searchByEmail": "Search by email...",
+         "filterByRole": "Filter by role..."
+      }
+   },
+   "roles": {
+      "success": {
+         "retrieved": "Role retrieved successfully",
+         "allRetrieved": "All roles retrieved successfully",
+         "created": "Role created successfully",
+         "updated": "Role updated successfully",
+         "deleted": "Role deleted successfully",
+         "allDeleted": "All roles have been deleted",
+         "initialized": "Roles initialized successfully",
+         "assignedToUser": "The role was successfully assigned to the user",
+         "userRolesRetrieved": "User roles were successfully retrieved",
+         "usersByRoleRetrieved": "Users for the specified role were successfully retrieved",
+         "userRoleDeleted": "The user role has been successfully deleted"
+      },
+      "errors": {
+         "exists": "Role name is already in use. Please choose another one",
+         "notFound": "Role not found",
+         "userRoleExists": "The specified role for the user already exists",
+         "userRoleNotFound": "The specified role for the user was not found"
+      },
+      "form": {
+         "name": "Role Name",
+         "namePlaceholder": "Enter role name",
+         "description": "Description (Optional)",
+         "descriptionPlaceholder": "Enter role description"
+      },
+      "dialogs": {
+         "createTitle": "Create New Role",
+         "createButton": "Create Role",
+         "viewTitle": "Role Details",
+         "editTitle": "Edit Role",
+         "updateButton": "Update Role",
+         "deleteButton": "Delete Role"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "roleName": "Role Name",
+         "description": "Description",
+         "noDescription": "No description"
+      },
+      "filters": {
+         "searchByName": "Search by role name...",
+         "searchByDescription": "Search by description..."
+      },
+      "validation": {
+         "nameRequired": "A proper role name is required",
+         "nameMinLength": "Role name must be at least 2 characters"
+      }
+   },
+   "permissions": {
+      "success": {
+         "retrieved": "Permission retrieved successfully",
+         "allRetrieved": "All permissions retrieved successfully",
+         "created": "Permission created successfully",
+         "updated": "Permission updated successfully",
+         "deleted": "Permission deleted successfully",
+         "assigned": "Permission assigned to role successfully",
+         "removed": "Permission removed from role successfully"
+      },
+      "errors": {
+         "notFound": "Permission not found",
+         "nameExists": "Permission name already exists",
+         "resourceActionExists": "Permission for this resource and action already exists",
+         "roleAlreadyHasPermission": "Role already has this permission",
+         "roleDoesNotHavePermission": "Role does not have this permission"
+      },
+      "form": {
+         "name": "Permission Name",
+         "namePlaceholder": "Enter permission name",
+         "description": "Description (Optional)",
+         "descriptionPlaceholder": "Enter permission description",
+         "resource": "Resource",
+         "resourcePlaceholder": "Select resource",
+         "action": "Action",
+         "actionPlaceholder": "Select action"
+      },
+      "dialogs": {
+         "createTitle": "Create New Permission",
+         "createButton": "Create Permission",
+         "viewTitle": "Permission Details",
+         "editTitle": "Edit Permission",
+         "updateButton": "Update Permission",
+         "deleteButton": "Delete Permission"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "name": "Name",
+         "description": "Description",
+         "resource": "Resource",
+         "action": "Action",
+         "noDescription": "No description"
+      },
+      "filters": {
+         "searchByName": "Search by permission name...",
+         "searchByResource": "Search by resource...",
+         "filterByResource": "Filter by resource...",
+         "filterByAction": "Filter by action..."
+      },
+      "validation": {
+         "nameRequired": "Permission name is required",
+         "resourceRequired": "Resource is required",
+         "actionRequired": "Action is required"
+      }
+   },
+   "system": {
+      "success": {
+         "demoSeeded": "Demo system seeded successfully",
+         "dataCleared": "All data cleared successfully"
+      },
+      "info": {
+         "seedingStarted": "Starting demo data seeding...",
+         "clearingData": "Clearing all data...",
+         "usersCleared": "Users cleared"
+      },
+      "errors": {
+         "seedingDisabled": "System initialization is disabled in this environment",
+         "invalidSeedApiKey": "Invalid seed API key provided"
+      }
+   },
+   "files": {
+      "success": {
+         "retrieved": "File retrieved successfully",
+         "created": "File created successfully",
+         "updated": "File updated successfully",
+         "deleted": "File deleted successfully",
+         "served": "File served successfully",
+         "streamed": "File streamed successfully"
+      },
+      "errors": {
+         "notFound": "File not found",
+         "nameExists": "A file with this name already exists",
+         "sizeTooLarge": "File size exceeds the maximum allowed limit",
+         "typeNotAllowed": "File type is not allowed",
+         "accessDenied": "You do not have permission to access this file",
+         "uploadFailed": "File upload failed",
+         "deleteFailed": "File deletion failed",
+         "invalidType": "Invalid file type",
+         "tooLarge": "File size exceeds maximum allowed limit",
+         "invalidEntityType": "Invalid entity type",
+         "entityNotFound": "Entity not found",
+         "insufficientPermissions": "Insufficient permissions to access this file",
+         "physicalNotFound": "Physical file not found on storage",
+         "mimeTypeMismatch": "File extension does not match file type - potential security risk",
+         "executableNotAllowed": "Executable files are not allowed for security reasons",
+         "recordNotFound": "File record not found in database for path: {fileAbsPath}",
+         "onlyImagesAllowed": "Only image files are allowed",
+         "invalidImageType": "Invalid image file type"
+      }
+   },
+   "validation": {
+      "general": {
+         "requiredFieldMissing": "Required field is missing",
+         "invalidDateFormat": "Invalid date format provided",
+         "invalidTimeFormat": "Invalid time format provided",
+         "invalidNumericValue": "Invalid numeric value provided",
+         "valueOutOfRange": "Value is out of acceptable range"
+      },
+      "formats": {
+         "invalidPhoneNumber": "Invalid phone number format",
+         "invalidEmail": "Invalid email address format"
+      }
+   },
+   "dashboard": {
+      "widgets": {
+         "totalStudents": "Total Students",
+         "totalTeachers": "Total Teachers",
+         "totalParents": "Total Parents",
+         "totalEarnings": "Total Earnings",
+         "totalExpenses": "Total Expenses"
+      },
+      "cards": {}
+   },
+   "language": {
+      "success": {
+         "preferenceUpdated": "Language preference updated successfully",
+         "preferenceRetrieved": "Language preference retrieved successfully"
+      },
+      "errors": {
+         "invalid": "Invalid language specified"
+      }
+   },
+   "common": {
+      "notAvailable": "N/A",
+      "notAssigned": "Not Assigned",
+      "notSpecified": "Not Specified",
+      "invalidDate": "Invalid date",
+      "loading": "Loading...",
+      "loadingCreate": "Creating...",
+      "loadingUpdate": "Updating...",
+      "loadingDelete": "Deleting...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit",
+      "view": "View",
+      "create": "Create",
+      "update": "Update",
+      "actions": "Actions",
+      "next": "Next",
+      "previous": "Previous",
+      "confirm": "Confirm",
+      "confirmAction": "This action cannot be undone.",
+      "warning": "Warning",
+      "hours": "hours",
+      "seconds": "seconds",
+      "minute": "minute",
+      "minutes": "minutes",
+      "total": "Total",
+      "none": "None",
+      "male": "Male",
+      "female": "Female",
+      "yes": "Yes, use this parent",
+      "no": "No, create new",
+      "currency": "DH",
+      "gender": {
+         "M": "Male",
+         "F": "Female"
+      }
+   },
+   "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "pending": "Pending",
+      "cancelled": "Cancelled",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "processing": "Processing",
+      "completed": "Completed",
+      "draft": "Draft",
+      "published": "Published",
+      "planned": "Planned",
+      "suspended": "Suspended",
+      "deleted": "Deleted",
+      "archived": "Archived",
+      "revoked": "Revoked",
+      "expired": "Expired"
+   },
+   "settings": {
+      "success": {
+         "retrieved": "Settings retrieved successfully",
+         "updated": "Settings updated successfully",
+         "deleted": "Settings deleted successfully",
+         "reset": "Settings reset to defaults successfully",
+         "languageRetrieved": "Language preference retrieved successfully",
+         "languageUpdated": "Language preference updated successfully",
+         "themeRetrieved": "Theme preference retrieved successfully",
+         "themeUpdated": "Theme preference updated successfully",
+         "notificationsRetrieved": "Notification preferences retrieved successfully",
+         "notificationsUpdated": "Notification preferences updated successfully",
+         "allDeleted": "All settings deleted successfully",
+         "securityRetrieved": "Security settings retrieved successfully",
+         "securityUpdated": "Security settings updated successfully",
+         "seeded": "Settings seeded successfully",
+         "systemRetrieved": "System settings retrieved successfully"
+      },
+      "errors": {
+         "notFound": "Settings not found for this user",
+         "retrievalFailed": "Failed to retrieve user settings",
+         "updateFailed": "Failed to update user settings",
+         "resetFailed": "Failed to reset user settings",
+         "deleteAllFailed": "Failed to delete all settings",
+         "validationFailed": "Settings validation failed",
+         "invalidLanguage": "Invalid language specified",
+         "invalidSessionTimeout": "Invalid session timeout value",
+         "invalidTheme": "Invalid theme specified",
+         "invalidTimeZone": "Invalid time zone specified",
+         "noSettingsToDelete": "No settings found to delete",
+         "userSettingsNotFound": "User settings not found"
+      },
+      "database": {
+         "title": "Database Management",
+         "description": "Manage database operations and demo data seeding."
+      },
+      "system": {
+         "title": "System Settings",
+         "version": "Version",
+         "environment": "Environment",
+         "lastUpdate": "Last Update",
+         "nodeVersion": "Node Version",
+         "language": "Language",
+         "theme": "Theme",
+         "lightTheme": "Light",
+         "darkTheme": "Dark",
+         "systemTheme": "System",
+         "timeZone": "Time Zone",
+         "dateFormat": "Date Format",
+         "timeFormat": "Time Format",
+         "currency": "Currency",
+         "button": "Initialize System",
+         "confirmTitle": "Initialize System Defaults",
+         "confirmDescription": "This will create default system roles and admin user if they don't exist.",
+         "confirm": "Initialize System"
+      },
+      "school": {
+         "title": "School Information",
+         "schoolName": "School Name",
+         "schoolAddress": "School Address",
+         "schoolPhone": "School Phone",
+         "schoolEmail": "School Email",
+         "currentAcademicYear": "Current Academic Year",
+         "schoolStartTime": "School Start Time",
+         "schoolEndTime": "School End Time",
+         "lunchBreakDuration": "Lunch Break Duration (minutes)"
+      },
+      "academic": {
+         "title": "Academic Settings",
+         "attendanceRequirement": "Attendance Requirement (%)",
+         "maxClassSize": "Maximum Class Size",
+         "gradingPeriods": "Grading Periods"
+      },
+      "seed": {
+         "button": "Seed Demo Data",
+         "seeding": "Seeding...",
+         "confirmTitle": "Confirm Demo Data Seeding",
+         "confirmDescription": "This action will clear all existing data and populate the database with demo data.",
+         "warningTitle": "⚠️ Warning:",
+         "warningPoint1": "All existing data will be permanently deleted",
+         "warningPoint2": "Demo data will be inserted",
+         "warningPoint3": "This action cannot be undone",
+         "confirm": "Proceed with Seeding",
+         "success": "Demo data seeded successfully",
+         "successDescription": "The database has been populated with demo data.",
+         "error": "Failed to seed demo data",
+         "errorDescription": "An error occurred while seeding the database. Please try again."
+      },
+      "clear": {
+         "button": "Clear All Data",
+         "confirmTitle": "Clear All Data",
+         "confirmDescription": "This will permanently delete all data from the database.",
+         "warningMessage": "This action will delete all data from the system.",
+         "confirm": "Clear All Data"
+      },
+      "notifications": {
+         "title": "Notification Settings",
+         "description": "Configure how and when you receive notifications about system events.",
+         "systemNotifications": "System Notifications",
+         "emailNotifications": "Email Notifications",
+         "smsNotifications": "SMS Notifications",
+         "academicAlerts": "Academic Alerts",
+         "attendanceAlerts": "Attendance Alerts",
+         "eventAlerts": "Event Alerts",
+         "homeworkAlerts": "Homework Alerts",
+         "feesReminder": "Fees Reminder",
+         "parentNotifications": "Parent Notifications"
+      },
+      "security": {
+         "title": "Security Settings",
+         "description": "Manage security preferences and access controls.",
+         "twoFactorAuth": "Two-Factor Authentication",
+         "sessionTimeout": "Auto Session Timeout",
+         "passwordExpiry": "Password Expiry (90 days)",
+         "loginNotifications": "Login Notifications",
+         "parentAccessEnabled": "Parent Portal Access",
+         "apiKey": "API Key",
+         "apiKeyDescription": "This key is used for system operations and integrations."
+      }
+   },
+   "seed": {
+      "success": {
+         "systemSeeded": "System seeded successfully"
+      }
+   },
+   "feeTypes": {
+      "success": {
+         "retrieved": "Fee type retrieved successfully",
+         "allRetrieved": "All fee types retrieved successfully",
+         "created": "Fee type created successfully",
+         "updated": "Fee type updated successfully",
+         "deleted": "Fee type deleted successfully",
+         "allDeleted": "All fee types deleted successfully",
+         "activated": "Fee type activated successfully",
+         "deactivated": "Fee type deactivated successfully",
+         "archived": "Fee type archived successfully"
+      },
+      "errors": {
+         "notFound": "Fee type not found",
+         "nameAlreadyExists": "A fee type with this name already exists",
+         "invalidAmount": "Amount must be greater than 0",
+         "amountTooLarge": "Amount cannot exceed 1,000,000",
+         "dueDateTooOld": "Due date cannot be older than 1 year",
+         "alreadyArchived": "Fee type is already archived",
+         "alreadyActive": "Fee type is already active"
+      },
+      "form": {
+         "feeTypeInformation": "Fee Type Information",
+         "name": "Fee Type Name",
+         "namePlaceholder": "Enter fee type name",
+         "category": "Category",
+         "categoryPlaceholder": "Select category",
+         "description": "Description (Optional)",
+         "descriptionLabel": "Description",
+         "descriptionPlaceholder": "Enter description",
+         "amount": "Amount",
+         "amountPlaceholder": "Enter amount",
+         "paymentType": "Payment Type",
+         "paymentTypePlaceholder": "Select payment type",
+         "isActive": "Active Status",
+         "isActiveLabel": "Mark as active",
+         "schedule": "Payment Schedule",
+         "schedulePlaceholder": "Select schedule",
+         "status": "Status",
+         "statusPlaceholder": "Select status",
+         "dueDate": "Due Date",
+         "dueDatePlaceholder": "Select due date"
+      },
+      "dialogs": {
+         "createTitle": "Create New Fee Type",
+         "createButton": "Create Fee Type",
+         "viewTitle": "Fee Type Details",
+         "editTitle": "Edit Fee Type",
+         "updateButton": "Update Fee Type",
+         "deleteButton": "Delete Fee Type"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "name": "Name",
+         "category": "Category",
+         "description": "Description",
+         "amount": "Amount",
+         "paymentType": "Payment Type",
+         "schedule": "Schedule",
+         "status": "Status",
+         "dueDate": "Due Date",
+         "noDescription": "No description"
+      },
+      "filters": {
+         "searchByName": "Search by name...",
+         "filterByCategory": "Filter by category...",
+         "filterBySchedule": "Filter by schedule...",
+         "filterByStatus": "Filter by status..."
+      },
+      "validation": {
+         "nameRequired": "Fee type name is required",
+         "nameMinLength": "Name must be at least 2 characters",
+         "categoryRequired": "Category is required",
+         "amountRequired": "Amount is required",
+         "paymentTypeRequired": "Payment type is required",
+         "scheduleRequired": "Schedule is required",
+         "dueDateRequired": "Due date is required"
+      },
+      "category": {
+         "tuition": "Tuition",
+         "registration": "Registration",
+         "transport": "Transportation",
+         "cafeteria": "Cafeteria",
+         "books": "Books & Materials",
+         "sports": "Sports",
+         "uniform": "Uniform",
+         "exam": "Examination",
+         "technology": "Technology",
+         "library": "Library",
+         "fieldtrip": "Field Trip",
+         "other": "Other"
+      },
+      "paymentType": {
+         "recurring": "Recurring",
+         "oneTime": "One Time"
+      },
+      "schedule": {
+         "monthly": "Monthly",
+         "quarterly": "Quarterly",
+         "semester": "Semester",
+         "annually": "Annually",
+         "oneTime": "One Time"
+      }
+   },
+   "fees": {
+      "success": {
+         "retrieved": "Fee retrieved successfully",
+         "allRetrieved": "All fees retrieved successfully",
+         "created": "Fee created successfully",
+         "bulkCreated": "Fees created successfully",
+         "updated": "Fee updated successfully",
+         "deleted": "Fee deleted successfully",
+         "allDeleted": "All fees deleted successfully",
+         "paymentsRetrieved": "Payments retrieved successfully",
+         "schedulesRetrieved": "Payment schedules retrieved successfully",
+         "paymentRecorded": "Payment recorded successfully",
+         "paymentUpdated": "Payment updated successfully",
+         "paymentDeleted": "Payment deleted successfully",
+         "statusUpdated": "Fee status updated successfully",
+         "schedulesGenerated": "Payment schedules generated successfully"
+      },
+      "errors": {
+         "notFound": "Fee not found",
+         "paymentNotFound": "Payment not found",
+         "scheduleNotFound": "Payment schedule not found",
+         "feeAlreadyExists": "A fee for this student, academic year, and fee type already exists",
+         "invalidPaymentAmount": "Payment amount must be greater than 0",
+         "paymentExceedsBalance": "Payment amount exceeds remaining balance",
+         "checkNumberRequired": "Check number is required for check payments",
+         "checkDueDateInPast": "Check due date cannot be in the past",
+         "cannotDeleteWithPayments": "Cannot delete a fee that has payments recorded",
+         "studentNotFound": "Student not found",
+         "feeTypeNotFound": "Fee type not found",
+         "invalidSchedule": "Invalid payment schedule specified",
+         "invalidAcademicYear": "Invalid academic year format"
+      },
+      "validation": {
+         "studentRequired": "Student is required",
+         "feeTypeRequired": "Fee type is required",
+         "scheduleRequired": "Payment schedule is required",
+         "academicYearRequired": "Academic year is required",
+         "totalAmountRequired": "Total amount must be greater than 0",
+         "totalAmountMin": "Total amount must be at least 1",
+         "discountAmountMin": "Discount amount cannot be negative",
+         "discountExceedsTotal": "Discount amount cannot exceed total amount",
+         "atLeastOneFeeRequired": "At least one fee must be selected",
+         "feeRequired": "Fee is required",
+         "amountRequired": "Amount must be greater than 0",
+         "paymentMethodRequired": "Payment method is required",
+         "paymentDateRequired": "Payment date is required",
+         "checkNumberMinLength": "Check number must be at least 3 characters",
+         "checkDueDateRequired": "Check due date is required for check payments",
+         "transactionIdMinLength": "Transaction ID must be at least 3 characters"
+      },
+      "form": {
+         "feeInformation": "Fee Information",
+         "additionalInformation": "Additional Information",
+         "paymentInformation": "Payment Information",
+         "student": "Student",
+         "studentPlaceholder": "Select a student",
+         "feeType": "Fee Type",
+         "feeTypePlaceholder": "Select fee type",
+         "schedule": "Payment Schedule",
+         "schedulePlaceholder": "Select payment schedule",
+         "academicYear": "Academic Year",
+         "academicYearPlaceholder": "e.g., 2024-2025",
+         "totalAmount": "Total Amount",
+         "totalAmountPlaceholder": "Enter total amount",
+         "discountAmount": "Discount Amount",
+         "discountAmountPlaceholder": "Enter discount amount (optional)",
+         "amount": "Amount",
+         "netAmount": "Net Amount",
+         "paidAmount": "Paid Amount",
+         "remainingAmount": "Remaining Amount",
+         "status": "Status",
+         "notes": "Notes",
+         "notesPlaceholder": "Add any additional notes...",
+         "generateSchedules": "Generate Payment Schedules",
+         "generateSchedulesLabel": "Automatically generate payment schedules based on the selected schedule type",
+         "paymentAmount": "Payment Amount",
+         "paymentAmountPlaceholder": "Enter payment amount",
+         "paymentMethod": "Payment Method",
+         "paymentMethodPlaceholder": "Select payment method",
+         "paymentDate": "Payment Date",
+         "paymentDatePlaceholder": "Select payment date",
+         "checkNumber": "Check Number",
+         "checkNumberPlaceholder": "Enter check number",
+         "checkDueDate": "Check Due Date",
+         "checkDueDatePlaceholder": "Select check due date",
+         "transactionId": "Transaction ID",
+         "transactionIdPlaceholder": "Enter transaction ID",
+         "paymentNotes": "Payment Notes",
+         "paymentNotesPlaceholder": "Add payment notes...",
+         "selectFeeTypes": "Select Fee Types",
+         "selectFeeTypesDescription": "Click on fee types to add them. Selected fees will have a green border and check mark.",
+         "addSelectedFees": "Add Selected Fees",
+         "addFeeTypes": "Add Fee Types",
+         "selectedFees": "Selected Fees",
+         "total": "Total",
+         "noStudentFound": "No Student Found",
+         "searchStudent": "Search Student",
+         "noFeesSelected": "No fees selected. Click the button above to add fee types."
+      },
+      "dialogs": {
+         "createTitle": "Create New Fee",
+         "createButton": "Create Fee",
+         "viewTitle": "Fee Details",
+         "editTitle": "Edit Fee",
+         "updateButton": "Update Fee",
+         "deleteButton": "Delete Fee",
+         "recordPaymentTitle": "Record Payment",
+         "recordPaymentButton": "Record Payment",
+         "viewPaymentTitle": "Payment Details",
+         "editPaymentTitle": "Edit Payment",
+         "updatePaymentButton": "Update Payment",
+         "deletePaymentButton": "Delete Payment"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "student": "Student",
+         "studentCode": "Student Code",
+         "feeType": "Fee Type",
+         "academicYear": "Academic Year",
+         "schedule": "Schedule",
+         "totalAmount": "Total Amount",
+         "discountAmount": "Discount",
+         "netAmount": "Net Amount",
+         "paidAmount": "Paid Amount",
+         "remainingAmount": "Remaining",
+         "balanceDue": "Balance Due",
+         "status": "Status",
+         "dueDate": "Due Date",
+         "paymentDate": "Payment Date",
+         "amount": "Amount",
+         "method": "Method",
+         "notes": "Notes",
+         "financialSummary": "Financial Summary"
+      },
+      "filters": {
+         "searchByStudent": "Search by student name...",
+         "searchByStudentCode": "Search by student code...",
+         "filterByFeeType": "Filter by fee type...",
+         "filterByStatus": "Filter by status...",
+         "filterBySchedule": "Filter by schedule...",
+         "filterByAcademicYear": "Filter by academic year..."
+      },
+      "schedule": {
+         "monthly": "Monthly",
+         "quarterly": "Quarterly",
+         "semester": "Semester",
+         "annually": "Annually",
+         "oneTime": "One Time"
+      },
+      "status": {
+         "pending": "Pending",
+         "paid": "Paid",
+         "partially_paid": "Partially Paid",
+         "overdue": "Overdue",
+         "cancelled": "Cancelled"
+      },
+      "paymentMethod": {
+         "cash": "Cash",
+         "check": "Check",
+         "bank_transfer": "Bank Transfer",
+         "credit_card": "Credit Card",
+         "online": "Online Payment"
+      },
+      "card": {
+         "feeInfo": "Fee Information",
+         "paymentInfo": "Payment Information",
+         "studentInfo": "Student Information",
+         "scheduleInfo": "Schedule Information"
+      }
+   },
+   "students": {
+      "success": {
+         "retrieved": "Student retrieved successfully",
+         "allRetrieved": "All students retrieved successfully",
+         "created": "Student created successfully",
+         "updated": "Student updated successfully",
+         "deleted": "Student deleted successfully",
+         "allDeleted": "All students deleted successfully",
+         "seeded": "Students seeded successfully"
+      },
+      "errors": {
+         "notFound": "Student not found",
+         "studentCodeExists": "A student with this student code already exists",
+         "emailExists": "A student with this email already exists",
+         "invalidClass": "Invalid class specified",
+         "invalidSection": "Invalid section specified"
+      },
+      "validation": {
+         "studentCodeRequired": "Student code is required",
+         "nameMinLength": "Name must be at least 2 characters long",
+         "emailInvalid": "Invalid email address format",
+         "genderRequired": "Please select a gender",
+         "classRequired": "Please select a class",
+         "sectionRequired": "Please select a section",
+         "enrollmentDateRequired": "Enrollment date is required"
+      },
+      "tabs": {
+         "studentData": "Student Data",
+         "parentData": "Parent Data",
+         "fatherData": "Father data",
+         "motherData": "Mother data",
+         "feesData": "Fees Data"
+      },
+      "form": {
+         "personalData": "Personal Data",
+         "academicInformation": "Academic Information",
+         "accountInfo": "Account Info",
+         "parentDataPlaceholder": "Parent information will be added here",
+         "feesDataPlaceholder": "Fee information will be added here",
+         "studentCode": "Student Code",
+         "studentCodePlaceholder": "Enter student code",
+         "fullName": "Full Name",
+         "fullNamePlaceholder": "Enter full name",
+         "gender": "Gender",
+         "dateOfBirth": "Date of Birth",
+         "dateOfBirthPlaceholder": "Select date",
+         "phone": "Phone",
+         "phonePlaceholder": "Enter phone number",
+         "address": "Address",
+         "addressPlaceholder": "Enter full address",
+         "medicalConditions": "Medical Conditions",
+         "medicalConditionsPlaceholder": "List any medical conditions, allergies, or special needs...",
+         "class": "Class",
+         "classPlaceholder": "Select a class",
+         "section": "Section",
+         "sectionPlaceholder": "Select a section",
+         "enrollmentDate": "Enrollment Date",
+         "enrollmentDatePlaceholder": "Enter date",
+         "previousSchool": "Previous School",
+         "previousSchoolPlaceholder": "Enter previous school name",
+         "email": "Email",
+         "emailPlaceholder": "Enter email",
+         "password": "Password",
+         "passwordPlaceholder": "Select an password",
+         "image": "Upload",
+         "studentImage": "Student Photo",
+         "fatherInformation": "Father Information",
+         "fatherData": "Father data",
+         "fatherName": "Father's Name",
+         "fatherNamePlaceholder": "Enter father's full name",
+         "fatherEmail": "Father's Email",
+         "fatherEmailPlaceholder": "Enter father's email",
+         "fatherPhone": "Father's Phone",
+         "fatherPhonePlaceholder": "Enter father's phone number",
+         "fatherCin": "Father's CIN",
+         "fatherCinPlaceholder": "Enter father's national ID",
+         "fatherOccupation": "Father's Occupation",
+         "fatherOccupationPlaceholder": "Enter father's occupation",
+         "fatherDateOfBirth": "Father's Date of Birth",
+         "fatherDateOfBirthPlaceholder": "Select date",
+         "fatherAddress": "Father's Address",
+         "fatherAddressPlaceholder": "Enter father's full address",
+         "financialResponsibility": "Financial Responsibility",
+         "financialResponsibilityLabel": "Responsible for tuition and fees payment",
+         "isEmergencyContact": "Emergency Contact",
+         "isEmergencyContactLabel": "Can be contacted in case of emergency",
+         "motherInformation": "Mother Information",
+         "motherData": "Mother data",
+         "motherName": "Mother's Name",
+         "motherNamePlaceholder": "Enter mother's full name",
+         "motherEmail": "Mother's Email",
+         "motherEmailPlaceholder": "Enter mother's email",
+         "motherPhone": "Mother's Phone",
+         "motherPhonePlaceholder": "Enter mother's phone number",
+         "motherCin": "Mother's CIN",
+         "motherCinPlaceholder": "Enter mother's national ID",
+         "motherOccupation": "Mother's Occupation",
+         "motherOccupationPlaceholder": "Enter mother's occupation",
+         "motherDateOfBirth": "Mother's Date of Birth",
+         "motherDateOfBirthPlaceholder": "Select date",
+         "motherAddress": "Mother's Address",
+         "motherAddressPlaceholder": "Enter mother's full address",
+         "feesInformation": "Fees Information",
+         "feeType": "Fee Type",
+         "feeTypePlaceholder": "Select fee type",
+         "feeAmount": "Amount",
+         "feeAmountPlaceholder": "Enter amount",
+         "feeStatus": "Payment Status",
+         "feeStatusPlaceholder": "Select status",
+         "feeDueDate": "Due Date",
+         "feeDueDatePlaceholder": "Select due date",
+         "feePaymentDate": "Payment Date",
+         "feePaymentDatePlaceholder": "Select payment date",
+         "feeDiscount": "Discount (%)",
+         "feeDiscountPlaceholder": "Enter discount percentage",
+         "feeNotes": "Notes",
+         "feeNotesPlaceholder": "Additional notes...",
+         "searchFather": "Search Existing Parent (Father Information)",
+         "searchMother": "Search Existing Parent (Mother Information)",
+         "searchByEmailOrCin": "Search by email or CIN",
+         "searchStudent": "Search Student",
+         "existingParent": "Existing Parent",
+         "linked": "Linked",
+         "newFatherWillBeCreated": "New Father - Will be created",
+         "newMotherWillBeCreated": "New Mother - Will be created",
+         "name": "Name",
+         "namePlaceholder": "Enter name",
+         "cin": "CIN",
+         "cinPlaceholder": "Enter national ID",
+         "occupation": "Occupation",
+         "occupationPlaceholder": "Enter occupation",
+         "existingParentFound": "Existing Parent Found",
+         "existingParentFoundDescription": "We found an existing parent with the same {field}. Would you like to link this parent instead of creating a new one?"
+      },
+      "dialogs": {
+         "createTitle": "Create New Student",
+         "createButton": "Create Student",
+         "viewTitle": "Student Details",
+         "editTitle": "Edit Student",
+         "updateButton": "Update Student",
+         "deleteButton": "Delete Student"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "studentCode": "Student Code",
+         "name": "Name",
+         "email": "Email",
+         "class": "Class",
+         "section": "Section",
+         "gender": "Gender",
+         "status": "Status"
+      },
+      "filters": {
+         "searchByName": "Search by name...",
+         "searchByStudentCode": "Search by student code...",
+         "searchByEmail": "Search by email...",
+         "filterByStatus": "Filter by status...",
+         "filterByGender": "Filter by gender...",
+         "filterByClass": "Filter by class...",
+         "filterBySection": "Filter by section..."
+      },
+      "card": {
+         "personalInfo": "Personal Information",
+         "academicInfo": "Academic Information",
+         "medicalInfo": "Medical Information"
+      },
+      "status": {
+         "graduated": "Graduated",
+         "transferred": "Transferred"
+      }
+   },
+   "parents": {
+      "success": {
+         "retrieved": "Parent retrieved successfully",
+         "allRetrieved": "All parents retrieved successfully",
+         "created": "Parent created successfully",
+         "updated": "Parent updated successfully",
+         "deleted": "Parent deleted successfully",
+         "allDeleted": "All parents deleted successfully",
+         "studentLinked": "Student linked to parent successfully",
+         "studentUnlinked": "Student unlinked from parent successfully",
+         "seeded": "Parents seeded successfully"
+      },
+      "errors": {
+         "notFound": "Parent not found",
+         "emailExists": "A parent with this email already exists",
+         "cinExists": "A parent with this CIN already exists",
+         "hasLinkedStudents": "Cannot delete parent with linked students",
+         "studentNotLinked": "Student is not linked to this parent",
+         "studentAlreadyLinked": "Student is already linked to this parent"
+      },
+      "validation": {
+         "nameMinLength": "Name must be at least 2 characters long",
+         "emailInvalid": "Invalid email address format",
+         "phoneRequired": "Phone number is required",
+         "cinMinLength": "CIN must be at least 8 characters long",
+         "genderRequired": "Please select a gender",
+         "relationshipTypeRequired": "Please select a relationship type",
+         "maritalStatusRequired": "Please select a marital status"
+      },
+      "form": {
+         "personalInformation": "Personal Information",
+         "contactInformation": "Contact Information",
+         "fullName": "Full Name",
+         "fullNamePlaceholder": "Enter full name",
+         "email": "Email Address",
+         "emailPlaceholder": "Enter email address",
+         "phone": "Phone Number",
+         "phonePlaceholder": "Enter phone number",
+         "cin": "National ID (CIN)",
+         "cinPlaceholder": "Enter national ID number",
+         "gender": "Gender",
+         "nationality": "Nationality",
+         "nationalityPlaceholder": "Enter nationality",
+         "dateOfBirth": "Date of Birth",
+         "dateOfBirthPlaceholder": "Select date of birth",
+         "occupation": "Occupation",
+         "occupationPlaceholder": "Enter occupation",
+         "maritalStatus": "Marital Status",
+         "address": "Address",
+         "addressPlaceholder": "Enter full address",
+         "relationshipType": "Relationship Type",
+         "isEmergencyContact": "Emergency Contact",
+         "parentImage": "Parent Photo",
+         "parent": "Parent",
+         "image": "Upload Photo"
+      },
+      "relationships": {
+         "father": "Father",
+         "mother": "Mother",
+         "guardian": "Guardian",
+         "stepparent": "Step Parent",
+         "grandparent": "Grand Parent",
+         "other": "Other"
+      },
+      "maritalStatus": {
+         "married": "Married",
+         "divorced": "Divorced",
+         "widowed": "Widowed",
+         "separated": "Separated",
+         "single": "Single"
+      },
+      "dialogs": {
+         "createTitle": "Create New Parent",
+         "createTitleMany": "Bulk Create Parents",
+         "createButton": "Create Parent",
+         "viewTitle": "Parent Details",
+         "editTitle": "Edit Parent",
+         "updateButton": "Update Parent",
+         "deleteButton": "Delete Parent"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "name": "Name",
+         "email": "Email",
+         "phone": "Phone",
+         "relationship": "Relationship",
+         "gender": "Gender",
+         "cin": "CIN",
+         "occupation": "Occupation"
+      },
+      "filters": {
+         "searchByName": "Search by name...",
+         "searchByEmail": "Search by email...",
+         "searchByPhone": "Search by phone...",
+         "filterByRelationship": "Filter by relationship..."
+      }
+   },
+   "teachers": {
+      "success": {
+         "retrieved": "Teacher retrieved successfully",
+         "allRetrieved": "All teachers retrieved successfully",
+         "created": "Teacher created successfully",
+         "updated": "Teacher updated successfully",
+         "deleted": "Teacher deleted successfully",
+         "allDeleted": "All teachers deleted successfully",
+         "seeded": "Teachers seeded successfully"
+      },
+      "errors": {
+         "notFound": "Teacher not found",
+         "cinExists": "A teacher with this CIN already exists",
+         "emailExists": "A teacher with this email already exists"
+      },
+      "validation": {
+         "cinMinLength": "CIN must be at least 8 characters long",
+         "nameMinLength": "Name must be at least 2 characters long",
+         "emailInvalid": "Invalid email address format",
+         "phoneRequired": "Phone number is required",
+         "hireDateRequired": "Hire date is required"
+      },
+      "form": {
+         "personalInformation": "Personal Information",
+         "professionalInformation": "Professional Information",
+         "assignmentInformation": "Assignment Information",
+         "financialInformation": "Financial Information",
+         "emergencyContact": "Emergency Contact",
+         "assignment": "Assignment",
+         "fullName": "Full Name",
+         "fullNamePlaceholder": "Enter full name",
+         "firstName": "First Name",
+         "firstNamePlaceholder": "Enter first name",
+         "lastName": "Last Name",
+         "lastNamePlaceholder": "Enter last name",
+         "cin": "National ID (CIN)",
+         "cinPlaceholder": "Enter national ID number",
+         "email": "Email Address",
+         "emailPlaceholder": "Enter email address",
+         "phone": "Phone Number",
+         "phonePlaceholder": "Enter phone number",
+         "address": "Address",
+         "addressPlaceholder": "Enter full address",
+         "specialization": "Specialization",
+         "specializationPlaceholder": "e.g., Mathematics, Science",
+         "yearsOfExperience": "Years of Experience",
+         "yearsOfExperiencePlaceholder": "Enter years of experience",
+         "salary": "Salary",
+         "salaryPlaceholder": "Enter monthly salary",
+         "hireDate": "Hire Date",
+         "bankAccount": "Bank Account",
+         "bankAccountPlaceholder": "Enter bank account number",
+         "emergencyContactName": "Emergency Contact Name",
+         "emergencyContactNamePlaceholder": "Enter emergency contact name",
+         "emergencyPhone": "Emergency Phone",
+         "emergencyPhonePlaceholder": "Enter emergency phone",
+         "status": "Status",
+         "image": "Upload Photo",
+         "gender": "Gender",
+         "subject": "Subject",
+         "subjectPlaceholder": "Enter subject name",
+         "class": "Class",
+         "classPlaceholder": "Enter class name",
+         "section": "Section",
+         "sectionPlaceholder": "Enter section name",
+         "academicYear": "Academic Year",
+         "employmentType": "Employment Type",
+         "employmentTypePlaceholder": "Select employment type",
+         "workloadHours": "Workload Hours (per week)",
+         "workloadHoursPlaceholder": "Enter weekly workload hours",
+         "academicDegrees": "Academic Degrees",
+         "academicDegreesPlaceholder": "e.g., Bachelor's in Mathematics, Master's in Education",
+         "addAssignment": "Add Assignment",
+         "sections": "Sections",
+         "sectionsPlaceholder": "Select sections",
+         "subjects": "Subjects",
+         "subjectsPlaceholder": "Select subjects",
+         "noAssignments": "No assignments"
+      },
+      "status": {
+         "active": "Active",
+         "inactive": "Inactive",
+         "onLeave": "On Leave"
+      },
+      "employmentType": {
+         "fullTime": "Full time",
+         "partTime": "Part time",
+         "contract": "Contract",
+         "temporary": "Temporary"
+      },
+      "dialogs": {
+         "createTitle": "Create New Teacher",
+         "createButton": "Create Teacher",
+         "viewTitle": "Teacher Details",
+         "editTitle": "Edit Teacher",
+         "updateButton": "Update Teacher",
+         "deleteButton": "Delete Teacher"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "name": "Name",
+         "email": "Email",
+         "phone": "Phone",
+         "specialization": "Specialization",
+         "cin": "CIN",
+         "hireDate": "Hire Date",
+         "salary": "Salary",
+         "status": "Status",
+         "classes":"Classes",
+         "subjects":"Subjects"
+      },
+      "filters": {
+         "searchByName": "Search by name...",
+         "searchByEmail": "Search by email...",
+         "filterByStatus": "Filter by status...",
+         "filterBySpecialization": "Filter by specialization..."
+      },
+      "tabs": {
+         "teacherData": "Teacher Data",
+         "assignmentData": "Assignment Data"
+      }
+   },
+   "drivers": {
+      "success": {
+         "retrieved": "Driver retrieved successfully",
+         "allRetrieved": "All drivers retrieved successfully",
+         "created": "Driver created successfully",
+         "updated": "Driver updated successfully",
+         "deleted": "Driver deleted successfully",
+         "allDeleted": "All drivers deleted successfully",
+         "seeded": "Drivers seeded successfully",
+         "statusUpdated": "Driver status updated successfully"
+      },
+      "errors": {
+         "notFound": "Driver not found",
+         "cinExists": "A driver with this CIN already exists",
+         "licenseNumberExists": "A driver with this license number already exists",
+         "assignmentNotFound": "Driver assignment not found"
+      },
+      "validation": {
+         "cinMinLength": "CIN must be at least 8 characters long",
+         "nameMinLength": "Name must be at least 2 characters long",
+         "emailInvalid": "Invalid email address format",
+         "phoneRequired": "Phone number is required",
+         "hireDateRequired": "Hire date is required",
+         "licenseNumberRequired": "License number is required",
+         "licenseExpiryRequired": "License expiry date is required"
+      },
+      "form": {
+         "personalInformation": "Personal Information",
+         "professionalInformation": "Professional Information",
+         "fullName": "Full Name",
+         "fullNamePlaceholder": "Enter full name",
+         "cin": "National ID (CIN)",
+         "cinPlaceholder": "Enter national ID number",
+         "email": "Email Address",
+         "emailPlaceholder": "Enter email address",
+         "phone": "Phone Number",
+         "phonePlaceholder": "Enter phone number",
+         "address": "Address",
+         "addressPlaceholder": "Enter full address",
+         "licenseNumber": "License Number",
+         "licenseNumberPlaceholder": "Enter license number",
+         "licenseType": "License Type",
+         "licenseExpiry": "License Expiry",
+         "hireDate": "Hire Date",
+         "salary": "Salary",
+         "salaryPlaceholder": "Enter monthly salary",
+         "yearsOfExperience": "Years of Experience",
+         "yearsOfExperiencePlaceholder": "Enter years of experience",
+         "emergencyContactName": "Emergency Contact Name",
+         "emergencyContactNamePlaceholder": "Enter emergency contact name",
+         "emergencyPhone": "Emergency Phone",
+         "emergencyPhonePlaceholder": "Enter emergency phone",
+         "status": "Status",
+         "notes": "Notes",
+         "notesPlaceholder": "Add any additional notes...",
+         "image": "Upload Photo",
+         "gender": "Gender"
+      },
+      "status": {
+         "active": "Active",
+         "inactive": "Inactive",
+         "onLeave": "On Leave",
+         "suspended": "Suspended"
+      },
+      "dialogs": {
+         "createTitle": "Create New Driver",
+         "createButton": "Create Driver",
+         "viewTitle": "Driver Details",
+         "editTitle": "Edit Driver",
+         "updateButton": "Update Driver",
+         "deleteButton": "Delete Driver"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "name": "Name",
+         "email": "Email",
+         "phone": "Phone",
+         "licenseNumber": "License Number",
+         "licenseType": "License Type",
+         "licenseExpiry": "License Expiry",
+         "cin": "CIN",
+         "hireDate": "Hire Date",
+         "status": "Status"
+      },
+      "filters": {
+         "searchByName": "Search by name...",
+         "searchByLicense": "Search by license number...",
+         "filterByStatus": "Filter by status..."
+      }
+   },
+   "transport": {
+      "success": {
+         "retrieved": "Bus retrieved successfully",
+         "allRetrieved": "All buses retrieved successfully",
+         "created": "Bus created successfully",
+         "updated": "Bus updated successfully",
+         "deleted": "Bus deleted successfully",
+         "allDeleted": "All buses deleted successfully"
+      },
+      "errors": {
+         "notFound": "Bus not found",
+         "busNumberExists": "A bus with this number already exists",
+         "registrationExists": "A bus with this registration number already exists"
+      },
+      "validation": {
+         "busNumberRequired": "Bus number is required",
+         "registrationNumberRequired": "Registration number is required",
+         "driverNameMinLength": "Driver name must be at least 2 characters long",
+         "driverPhoneRequired": "Driver phone number is required",
+         "routeNameRequired": "Route name is required",
+         "capacityPositive": "Capacity must be a positive number"
+      },
+      "form": {
+         "busInformation": "Bus Information",
+         "busNumber": "Bus Number",
+         "busNumberPlaceholder": "e.g., BUS-001",
+         "registrationNumber": "Registration Number",
+         "registrationNumberPlaceholder": "Enter vehicle registration",
+         "capacity": "Capacity (Seats)",
+         "capacityPlaceholder": "Enter number of seats",
+         "routeName": "Route Name",
+         "routeNamePlaceholder": "e.g., Route A - Downtown",
+         "driverName": "Driver Name",
+         "driverNamePlaceholder": "Enter driver's full name",
+         "driverPhone": "Driver Phone",
+         "driverPhonePlaceholder": "Enter driver's phone number",
+         "driverLicense": "Driver License Number",
+         "driverLicensePlaceholder": "Enter license number",
+         "pickupTime": "Pickup Time",
+         "dropoffTime": "Drop-off Time",
+         "fare": "Monthly Fare",
+         "farePlaceholder": "Enter monthly fee",
+         "status": "Status"
+      },
+      "status": {
+         "active": "Active",
+         "inactive": "Inactive",
+         "maintenance": "Under Maintenance"
+      },
+      "dialogs": {
+         "createTitle": "Add New Bus",
+         "createButton": "Add Bus",
+         "viewTitle": "Bus Details",
+         "editTitle": "Edit Bus",
+         "updateButton": "Update Bus",
+         "deleteButton": "Delete Bus"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "busNumber": "Bus No.",
+         "registrationNumber": "Registration",
+         "routeName": "Route",
+         "driverName": "Driver",
+         "driverPhone": "Driver Phone",
+         "capacity": "Capacity",
+         "seats": "seats",
+         "pickupTime": "Pickup Time",
+         "dropoffTime": "Drop-off Time",
+         "fare": "Fare",
+         "status": "Status"
+      },
+      "filters": {
+         "searchByBusNumber": "Search by bus number...",
+         "filterByRoute": "Filter by route...",
+         "filterByStatus": "Filter by status..."
+      }
+   },
+   "sections": {
+      "success": {
+         "retrieved": "Section retrieved successfully",
+         "allRetrieved": "All sections retrieved successfully",
+         "created": "Section created successfully",
+         "updated": "Section updated successfully",
+         "deleted": "Section deleted successfully",
+         "allDeleted": "All sections deleted successfully",
+         "seeded": "Sections seeded successfully"
+      },
+      "errors": {
+         "notFound": "Section not found",
+         "nameExists": "A section with this name already exists in this class",
+         "classRequired": "Class is required",
+         "notInClass": "Section does not belong to the specified class"
+      },
+      "validation": {
+         "nameRequired": "Section name is required",
+         "nameTooLong": "Section name is too long",
+         "classRequired": "Please select a class",
+         "maxStudentsMin": "Maximum students must be at least 1",
+         "maxStudentsMax": "Maximum students cannot exceed 100",
+         "roomNumberTooLong": "Room number is too long"
+      },
+      "form": {
+         "sectionInformation": "Section Information",
+         "sectionName": "Section Name",
+         "sectionNamePlaceholder": "e.g., A, B, C",
+         "class": "Class",
+         "classPlaceholder": "Select a class",
+         "roomNumber": "Room Number",
+         "roomNumberPlaceholder": "e.g., 101, Lab A",
+         "maxStudents": "Maximum Students",
+         "maxStudentsPlaceholder": "Enter capacity",
+         "status": "Status"
+      },
+      "dialogs": {
+         "createTitle": "Create New Section",
+         "createButton": "Create Section",
+         "viewTitle": "Section Details",
+         "editTitle": "Edit Section",
+         "updateButton": "Update Section",
+         "deleteButton": "Delete Section"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "sectionName": "Section",
+         "class": "Class",
+         "roomNumber": "Room",
+         "capacity": "Capacity",
+         "status": "Status",
+         "description": "Description",
+         "level": "Level"
+      },
+      "filters": {
+         "searchByName": "Search by section name..."
+      },
+      "card": {
+         "sectionInfo": "Section Information",
+         "classInfo": "Class Information"
+      }
+   },
+   "classes": {
+      "success": {
+         "retrieved": "Class retrieved successfully",
+         "allRetrieved": "All classes retrieved successfully",
+         "created": "Class created successfully",
+         "updated": "Class updated successfully",
+         "deleted": "Class deleted successfully",
+         "allDeleted": "All classes deleted successfully",
+         "seeded": "Classes seeded successfully"
+      },
+      "errors": {
+         "notFound": "Class not found",
+         "nameExists": "A class with this name already exists",
+         "invalidAcademicYear": "Invalid academic year format"
+      },
+      "validation": {
+         "nameRequired": "Class name is required",
+         "nameTooLong": "Class name is too long",
+         "academicYearRequired": "Academic year is required",
+         "academicYearFormat": "Academic year must be in YYYY-YYYY format"
+      },
+      "form": {
+         "classInformation": "Class Information",
+         "className": "Class Name",
+         "classNamePlaceholder": "e.g., CE1, CE2, CM1",
+         "academicYear": "Academic Year",
+         "academicYearPlaceholder": "e.g., 2024-2025",
+         "level": "Level",
+         "levelPlaceholder": "e.g., Elementary, Middle",
+         "description": "Description",
+         "descriptionLabel": "Description",
+         "descriptionPlaceholder": "Enter class description..."
+      },
+      "dialogs": {
+         "createTitle": "Create New Class",
+         "createButton": "Create Class",
+         "viewTitle": "Class Details",
+         "editTitle": "Edit Class",
+         "updateButton": "Update Class",
+         "deleteButton": "Delete Class"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "className": "Class Name",
+         "academicYear": "Academic Year",
+         "level": "Level",
+         "description": "Description"
+      },
+      "filters": {
+         "searchByName": "Search by class name..."
+      }
+   },
+   "subjects": {
+      "success": {
+         "retrieved": "Subject retrieved successfully",
+         "allRetrieved": "All subjects retrieved successfully",
+         "created": "Subject created successfully",
+         "updated": "Subject updated successfully",
+         "deleted": "Subject deleted successfully",
+         "allDeleted": "All subjects deleted successfully",
+         "seeded": "Subjects seeded successfully"
+      },
+      "errors": {
+         "notFound": "Subject not found",
+         "codeExists": "A subject with this code already exists",
+         "nameExists": "A subject with this name already exists",
+         "required": "Subject is required for teacher assignment"
+      },
+      "validation": {
+         "codeRequired": "Subject code is required",
+         "codeTooLong": "Subject code is too long",
+         "nameRequired": "Subject name is required",
+         "nameTooLong": "Subject name is too long"
+      },
+      "form": {
+         "subjectInformation": "Subject Information",
+         "code": "Subject Code",
+         "codePlaceholder": "e.g., MATH, ENG, SCI",
+         "name": "Subject Name",
+         "namePlaceholder": "e.g., Mathematics, English",
+         "description": "Description",
+         "descriptionPlaceholder": "Enter subject description..."
+      },
+      "dialogs": {
+         "createTitle": "Create New Subject",
+         "createButton": "Create Subject",
+         "viewTitle": "Subject Details",
+         "editTitle": "Edit Subject",
+         "updateButton": "Update Subject",
+         "deleteButton": "Delete Subject"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "id": "ID",
+         "code": "Code",
+         "name": "Name",
+         "description": "Description"
+      },
+      "filters": {
+         "searchByName": "Search by subject name...",
+         "searchByCode": "Search by code..."
+      }
+   },
+   "expenses": {
+      "success": {
+         "retrieved": "Expense retrieved successfully",
+         "allRetrieved": "All expenses retrieved successfully",
+         "created": "Expense created successfully",
+         "updated": "Expense updated successfully",
+         "deleted": "Expense deleted successfully",
+         "allDeleted": "All expenses deleted successfully"
+      },
+      "errors": {
+         "notFound": "Expense not found",
+         "invalidAmount": "Amount must be greater than 0",
+         "amountTooLarge": "Amount cannot exceed 1,000,000",
+         "titleRequired": "Title is required",
+         "categoryRequired": "Category is required",
+         "expenseDateRequired": "Expense date is required"
+      },
+      "form": {
+         "basicInformation": "Basic Information",
+         "paymentInformation": "Payment Information",
+         "category": "Category",
+         "categoryPlaceholder": "Select category",
+         "title": "Expense Title",
+         "titlePlaceholder": "Enter expense title",
+         "amount": "Amount",
+         "amountPlaceholder": "Enter amount",
+         "vendor": "Vendor",
+         "vendorPlaceholder": "Enter vendor name",
+         "expenseDate": "Expense Date",
+         "paymentMethod": "Payment Method",
+         "paymentDate": "Payment Date",
+         "invoiceNumber": "Invoice Number",
+         "invoiceNumberPlaceholder": "Enter invoice number",
+         "receiptNumber": "Receipt Number",
+         "receiptNumberPlaceholder": "Enter receipt number",
+         "checkNumber": "Check Number",
+         "checkNumberPlaceholder": "Enter check number",
+         "transactionRef": "Transaction Reference",
+         "transactionRefPlaceholder": "Enter transaction reference",
+         "status": "Status",
+         "notes": "Notes",
+         "notesPlaceholder": "Add additional notes..."
+      },
+      "dialogs": {
+         "createTitle": "Create New Expense",
+         "createButton": "Create Expense",
+         "viewTitle": "Expense Details",
+         "editTitle": "Edit Expense",
+         "updateButton": "Update Expense",
+         "deleteButton": "Delete Expense"
+      },
+      "table": {
+         "selectAll": "Select all",
+         "selectRow": "Select row",
+         "title": "Title",
+         "category": "Category",
+         "amount": "Amount",
+         "expenseDate": "Expense Date",
+         "vendor": "Vendor",
+         "paymentMethod": "Payment Method",
+         "status": "Status",
+         "approvedAt": "Approved Date"
+      },
+      "filters": {
+         "searchByTitle": "Search by title...",
+         "filterByCategory": "Filter by category...",
+         "filterByStatus": "Filter by status..."
+      },
+      "card": {
+         "totalAmount": "Total Amount",
+         "expenseDate": "Expense Date",
+         "vendor": "Vendor",
+         "paymentMethod": "Payment Method",
+         "approvedAt": "Approved Date",
+         "notes": "Notes"
+      },
+      "categories": {
+         "salary": "Salary",
+         "utilities": "Utilities",
+         "maintenance": "Maintenance",
+         "supplies": "Supplies",
+         "equipment": "Equipment",
+         "transport": "Transport",
+         "food": "Food",
+         "security": "Security",
+         "cleaning": "Cleaning",
+         "insurance": "Insurance",
+         "rent": "Rent",
+         "tax": "Tax",
+         "marketing": "Marketing",
+         "training": "Training",
+         "technology": "Technology",
+         "miscellaneous": "Miscellaneous"
+      },
+      "paymentMethods": {
+         "cash": "Cash",
+         "bankTransfer": "Bank Transfer",
+         "check": "Check",
+         "creditCard": "Credit Card",
+         "debitCard": "Debit Card",
+         "online": "Online Payment",
+         "mobilePayment": "Mobile Payment"
+      },
+      "statuses": {
+         "pending": "Pending",
+         "approved": "Approved",
+         "paid": "Paid",
+         "rejected": "Rejected",
+         "cancelled": "Cancelled"
+      },
+      "validation": {
+         "titleRequired": "Expense title is required",
+         "titleMinLength": "Title must be at least 2 characters",
+         "categoryRequired": "Category is required",
+         "amountRequired": "Amount is required",
+         "amountPositive": "Amount must be greater than 0",
+         "expenseDateRequired": "Expense date is required"
+      }
+   },
+   "vehicles": {
+      "success": {
+         "retrieved": "Vehicle retrieved successfully",
+         "allRetrieved": "All vehicles retrieved successfully",
+         "created": "Vehicle created successfully",
+         "updated": "Vehicle updated successfully",
+         "deleted": "Vehicle deleted successfully",
+         "allDeleted": "All vehicles deleted successfully",
+         "seeded": "Vehicles seeded successfully",
+         "statusUpdated": "Vehicle status updated successfully",
+         "locationsRetrieved": "Vehicle locations retrieved successfully",
+         "analyticsRetrieved": "Vehicle analytics retrieved successfully"
+      },
+      "errors": {
+         "notFound": "Vehicle not found",
+         "licensePlateExists": "A vehicle with this license plate already exists",
+         "idExists": "Vehicle ID already exists",
+         "invalidType": "Invalid vehicle type",
+         "invalidStatus": "Invalid vehicle status",
+         "invalidFuelType": "Invalid fuel type",
+         "invalidYear": "Year must be between {minYear} and {currentYear}",
+         "invalidEngineHours": "Engine hours must be a positive number",
+         "invalidMileage": "Mileage must be a positive number",
+         "invalidFuelCapacity": "Fuel capacity must be a positive number",
+         "invalidPurchasePrice": "Purchase price must be a positive number",
+         "inUse": "Vehicle is currently in use and cannot be deleted",
+         "vehiclesInUseCannotDelete": "The following vehicles are in use and cannot be deleted: {vehicleNames}",
+         "noVehiclesToDelete": "No vehicles found to delete"
+      },
+      "validation": {
+         "nameRequired": "Vehicle name is required",
+         "nameMinLength": "Name must be at least 2 characters long",
+         "brandRequired": "Brand is required",
+         "modelRequired": "Model is required",
+         "yearRequired": "Year is required",
+         "licensePlateRequired": "License plate is required",
+         "typeRequired": "Vehicle type is required"
+      },
+      "form": {
+         "vehicleInformation": "Vehicle Information",
+         "specifications": "Specifications",
+         "operationalDetails": "Operational Details",
+         "additionalDetails": "Additional Details",
+         "driverAssignment": "Driver Assignment",
+         "name": "Vehicle Name",
+         "namePlaceholder": "Enter vehicle name",
+         "brand": "Brand",
+         "brandPlaceholder": "Enter vehicle brand",
+         "model": "Model",
+         "modelPlaceholder": "Enter vehicle model",
+         "year": "Year",
+         "yearPlaceholder": "Enter year",
+         "licensePlate": "License Plate",
+         "licensePlatePlaceholder": "Enter license plate",
+         "capacity": "Capacity",
+         "capacityPlaceholder": "Enter passenger capacity",
+         "type": "Vehicle Type",
+         "typePlaceholder": "Select vehicle type",
+         "status": "Status",
+         "statusPlaceholder": "Select status",
+         "driver": "Assign Driver",
+         "driverPlaceholder": "Select a driver",
+         "searchDriver": "Search driver...",
+         "noDriverFound": "No driver found.",
+         "fuelType": "Fuel Type",
+         "fuelTypePlaceholder": "Select fuel type",
+         "tankCapacity": "Tank Capacity (L)",
+         "tankCapacityPlaceholder": "Enter tank capacity",
+         "purchaseDate": "Purchase Date",
+         "purchasePrice": "Purchase Price",
+         "purchasePricePlaceholder": "Enter purchase price",
+         "initialHours": "Initial Hours",
+         "initialHoursPlaceholder": "Enter initial hours",
+         "currentHours": "Current Hours",
+         "currentHoursPlaceholder": "Enter current hours",
+         "initialMileage": "Initial Mileage",
+         "initialMileagePlaceholder": "Enter initial mileage",
+         "currentMileage": "Current Mileage",
+         "currentMileagePlaceholder": "Enter current mileage",
+         "notes": "Notes",
+         "notesPlaceholder": "Enter additional notes",
+         "image": "Vehicle Image"
+      },
+      "types": {
+         "fullbus": "Full Bus",
+         "minibus": "Mini Bus",
+         "van": "Van",
+         "truck": "Truck",
+         "suv": "SUV",
+         "tractor": "Tractor",
+         "harvester": "Harvester",
+         "sprayer": "Sprayer",
+         "seeder": "Seeder",
+         "cultivator": "Cultivator",
+         "other": "Other"
+      },
+      "status": {
+         "active": "Active",
+         "inactive": "Inactive",
+         "maintenance": "Maintenance",
+         "retired": "Retired"
+      },
+      "statuses": {
+         "active": "Active",
+         "inactive": "Inactive",
+         "maintenance": "Maintenance",
+         "retired": "Retired"
+      },
+      "fuelTypes": {
+         "diesel": "Diesel",
+         "gasoline": "Gasoline",
+         "electric": "Electric",
+         "hybrid": "Hybrid"
+      },
+      "dialogs": {
+         "createTitle": "Add New Vehicle",
+         "createButton": "Create Vehicle",
+         "viewTitle": "Vehicle Details",
+         "editTitle": "Edit Vehicle",
+         "updateButton": "Update Vehicle",
+         "deleteButton": "Delete Vehicle"
+      },
+      "table": {
+         "id": "ID",
+         "name": "Name",
+         "brand": "Brand",
+         "model": "Model",
+         "year": "Year",
+         "licensePlate": "License Plate",
+         "type": "Type",
+         "status": "Status",
+         "fuelType": "Fuel Type",
+         "mileage": "Mileage",
+         "actions": "Actions",
+         "capacity": "Capacity",
+         "seats": "seats",
+         "driver": "Driver",
+         "noDriver": "No driver assigned",
+         "selectAll": "Select all",
+         "selectRow": "Select row"
+      },
+      "filters": {
+         "searchByName": "Search by vehicle name...",
+         "searchByLicensePlate": "Search by license plate...",
+         "filterByType": "Filter by type...",
+         "filterByStatus": "Filter by status..."
+      },
+      "card": {
+         "licensePlate": "License Plate",
+         "type": "Type",
+         "capacity": "Capacity",
+         "year": "Year",
+         "purchaseDate": "Purchase Date",
+         "purchasePrice": "Purchase Price",
+         "initialMileage": "Initial Mileage",
+         "currentMileage": "Current Mileage",
+         "driver": "Driver",
+         "notes": "Notes",
+         "purchaseInformation": "Purchase Information",
+         "mileageInformation": "Mileage Information"
+      }
+   },
+   "navigation": {
+      "dashboard": "Dashboard",
+      "students": "Students",
+      "teachers": "Teachers",
+      "parents": "Parents",
+      "classes": "Classes",
+      "sections": "Sections",
+      "subjects": "Subjects",
+      "attendance": "Attendance",
+      "exams": "Exams",
+      "grades": "Grades",
+      "calendar": "Calendar",
+      "events": "Events",
+      "announcements": "Announcements",
+      "fees": "Fees",
+      "feeTypes": "Fee Types",
+      "fee-types": "Fee Types",
+      "financial": "Financial",
+      "transport": "Transport",
+      "drivers": "Drivers",
+      "users": "Users",
+      "roles": "Roles",
+      "settings": "Settings",
+      "logout": "LogOut",
+      "academic": "Academic",
+      "bus": "Bus",
+      "expenses": "Expenses",
+      "communications": "Communications"
+   }
+}

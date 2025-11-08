@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/pc/Desktop/student management system/bruno/students/**)",
+      "Read(//c/Users/pc/Desktop/student management system/bruno/**)",
+      "Read(//c/Users/pc/Desktop/student management system/**)",
+      "Read(//c/Users/pc/Desktop/school management/**)",
+      "Bash(mkdir:*)",
+      "Bash(cat:*)",
+      "Read(//c/Users/pc/Desktop/Agricultural Vehicle Management System/dashboard/src/server/modules/**)",
+      "Bash(dir:*)",
+      "Read(//c/Users/pc/Desktop/Agricultural Vehicle Management System/dashboard/src/server/database/schema/**)",
+      "Bash(findstr:*)",
+      "Bash(npm run lint)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,413 @@
+{
+   "languages": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "العربية",
+      "es": "Español"
+   },
+   "auth": {
+      "success": {
+         "login": "Inicio de sesión exitoso",
+         "logout": "Cierre de sesión exitoso",
+         "register": "Registro exitoso. ¡Bienvenido!",
+         "passwordReset": "Restablecimiento de contraseña enviado",
+         "tokenGenerated": "Token de acceso generado exitosamente",
+         "tokenRefreshed": "Token de acceso actualizado exitosamente",
+         "refreshTokenGenerated": "Token de actualización generado exitosamente",
+         "refreshTokenRefreshed": "Token de actualización renovado exitosamente",
+         "authInitialized": "Autenticación inicializada exitosamente"
+      },
+      "errors": {
+         "emailExists": "Ya existe una cuenta con este correo electrónico",
+         "credentialsMissing": "Uno o más campos obligatorios están vacíos",
+         "invalidCredentials": "Credenciales inválidas. Por favor, inténtalo de nuevo",
+         "accessDenied": "Acceso denegado. No tienes permisos para acceder a este recurso",
+         "emailMissing": "Falta el correo electrónico. Por favor, proporciona una dirección de correo",
+         "tokenExpired": "El token de acceso ha expirado. Por favor, actualiza tu token",
+         "tokenVerificationFailed": "Falló la verificación del token de acceso",
+         "tokenMissing": "Falta el token de acceso. Por favor, proporciona un token de acceso",
+         "tokenInvalid": "El token de acceso proporcionado es inválido. Por favor, obtén un token válido",
+         "refreshTokenExpired": "Sesión expirada. Por favor, inicia sesión de nuevo",
+         "refreshTokenVerificationFailed": "Falló la verificación del token de actualización",
+         "refreshTokenMissing": "Falta el token de actualización. Por favor, proporciona un token de actualización",
+         "refreshTokenInvalid": "Token de actualización inválido. Por favor, inicia sesión de nuevo",
+         "authInitFailed": "Falló la inicialización de la autenticación"
+      },
+      "validation": {
+         "emailInvalid": "Formato de dirección de correo electrónico inválido",
+         "passwordMinLength": "La contraseña debe tener al menos 8 caracteres"
+      }
+   },
+   "users": {
+      "success": {
+         "retrieved": "Usuario recuperado exitosamente",
+         "created": "Usuario creado exitosamente",
+         "updated": "Usuario actualizado exitosamente",
+         "deleted": "Usuario eliminado exitosamente",
+         "allDeleted": "Todos los usuarios han sido eliminados"
+      },
+      "errors": {
+         "notFound": "No se encontró ningún usuario con la información proporcionada",
+         "adminRoleNotFound": "Rol de administrador no encontrado",
+         "idExists": "El ID de usuario ya existe"
+      },
+      "validation": {
+         "nameMinLength": "El nombre debe tener al menos 2 caracteres",
+         "emailInvalid": "Formato de dirección de correo electrónico inválido",
+         "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+         "passwordConfirmationRequired": "Se requiere confirmación de contraseña",
+         "passwordsDoNotMatch": "Las contraseñas no coinciden",
+         "roleRequired": "Por favor, selecciona un rol válido"
+      },
+      "form": {
+         "fullName": "Nombre Completo",
+         "fullNamePlaceholder": "Introduce el nombre completo",
+         "image": "Imagen",
+         "email": "Dirección de Correo Electrónico",
+         "emailPlaceholder": "Introduce la dirección de correo electrónico",
+         "password": "Contraseña",
+         "passwordPlaceholder": "Introduce la contraseña",
+         "newPassword": "Nueva Contraseña (dejar en blanco para mantener la actual)",
+         "confirmPassword": "Confirmar Contraseña",
+         "confirmPasswordPlaceholder": "Confirmar contraseña",
+         "userRole": "Rol de Usuario"
+      },
+      "roles": {
+         "admin": "Administrador",
+         "user": "Usuario",
+         "moderator": "Moderador"
+      },
+      "dialogs": {
+         "createTitle": "Crear Nuevo Usuario",
+         "createButton": "Crear Usuario",
+         "viewTitle": "Detalles del Usuario",
+         "editTitle": "Editar Usuario",
+         "updateButton": "Actualizar Usuario",
+         "deleteButton": "Eliminar Usuario"
+      },
+      "table": {
+         "selectAll": "Seleccionar todo",
+         "selectRow": "Seleccionar fila",
+         "id": "ID",
+         "name": "Nombre",
+         "email": "Correo Electrónico",
+         "role": "Rol",
+         "status": "Estado"
+      },
+      "filters": {
+         "searchByName": "Buscar por nombre...",
+         "searchByEmail": "Buscar por correo electrónico...",
+         "filterByRole": "Filtrar por rol..."
+      }
+   },
+   "roles": {
+      "success": {
+         "retrieved": "Rol recuperado exitosamente",
+         "created": "Rol creado exitosamente",
+         "updated": "Rol actualizado exitosamente",
+         "deleted": "Rol eliminado exitosamente",
+         "allDeleted": "Todos los roles han sido eliminados",
+         "initialized": "Roles inicializados exitosamente",
+         "assignedToUser": "El rol se asignó exitosamente al usuario",
+         "userRolesRetrieved": "Roles de usuario recuperados exitosamente",
+         "usersByRoleRetrieved": "Usuarios para el rol especificado recuperados exitosamente",
+         "userRoleDeleted": "El rol de usuario ha sido eliminado exitosamente"
+      },
+      "errors": {
+         "exists": "El nombre del rol ya está en uso. Por favor, elige otro",
+         "notFound": "Rol no encontrado",
+         "userRoleExists": "El rol especificado para el usuario ya existe",
+         "userRoleNotFound": "El rol especificado para el usuario no fue encontrado"
+      },
+      "form": {
+         "name": "Nombre del Rol",
+         "namePlaceholder": "Introduce el nombre del rol",
+         "description": "Descripción (Opcional)",
+         "descriptionPlaceholder": "Introduce la descripción del rol"
+      },
+      "dialogs": {
+         "createTitle": "Crear Nuevo Rol",
+         "createButton": "Crear Rol",
+         "viewTitle": "Detalles del Rol",
+         "editTitle": "Editar Rol",
+         "updateButton": "Actualizar Rol",
+         "deleteButton": "Eliminar Rol"
+      },
+      "table": {
+         "selectAll": "Seleccionar todo",
+         "selectRow": "Seleccionar fila",
+         "id": "ID",
+         "roleName": "Nombre del Rol",
+         "description": "Descripción",
+         "noDescription": "Sin descripción"
+      },
+      "filters": {
+         "searchByName": "Buscar por nombre del rol...",
+         "searchByDescription": "Buscar por descripción..."
+      },
+      "validation": {
+         "nameRequired": "Se requiere un nombre de rol apropiado",
+         "nameMinLength": "El nombre del rol debe tener al menos 2 caracteres"
+      }
+   },
+   "system": {
+      "success": {
+         "demoSeeded": "Sistema de demostración inicializado exitosamente",
+         "dataCleared": "Todos los datos borrados exitosamente",
+         "fieldsSeeded": "Campos inicializados exitosamente",
+         "vehiclesSeeded": "Vehículos inicializados exitosamente",
+         "operatorsSeeded": "Operadores inicializados exitosamente",
+         "operationsSeeded": "Operaciones inicializadas exitosamente",
+         "refuelsSeeded": "Repostajes inicializados exitosamente"
+      },
+      "info": {
+         "seedingStarted": "Iniciando la carga de datos de demostración...",
+         "clearingData": "Borrando todos los datos...",
+         "operationsCleared": "Operaciones borradas",
+         "refuelsCleared": "Repostajes borrados",
+         "operatorsCleared": "Operadores borrados",
+         "vehiclesCleared": "Vehículos borrados",
+         "fieldsCleared": "Campos borrados",
+         "usersCleared": "Usuarios borrados"
+      },
+      "errors": {
+         "seedingDisabled": "La inicialización del sistema está deshabilitada en este entorno",
+         "invalidSeedApiKey": "Clave API de inicialización inválida proporcionada"
+      }
+   },
+   "files": {
+      "success": {
+         "retrieved": "Archivo recuperado exitosamente",
+         "created": "Archivo creado exitosamente",
+         "updated": "Archivo actualizado exitosamente",
+         "deleted": "Archivo eliminado exitosamente",
+         "served": "Archivo servido exitosamente",
+         "streamed": "Archivo transmitido exitosamente"
+      },
+      "errors": {
+         "notFound": "Archivo no encontrado",
+         "nameExists": "Ya existe un archivo con este nombre",
+         "sizeTooLarge": "El tamaño del archivo excede el límite máximo permitido",
+         "typeNotAllowed": "El tipo de archivo no está permitido",
+         "accessDenied": "No tienes permiso para acceder a este archivo",
+         "uploadFailed": "Falló la subida del archivo",
+         "deleteFailed": "Falló la eliminación del archivo",
+         "invalidType": "Tipo de archivo inválido",
+         "tooLarge": "El tamaño del archivo excede el límite máximo permitido",
+         "invalidEntityType": "Tipo de entidad inválido",
+         "entityNotFound": "Entidad no encontrada",
+         "insufficientPermissions": "Permisos insuficientes para acceder a este archivo",
+         "physicalNotFound": "Archivo físico no encontrado en el almacenamiento",
+         "mimeTypeMismatch": "La extensión del archivo no coincide con el tipo de archivo - riesgo de seguridad potencial",
+         "executableNotAllowed": "Los archivos ejecutables no están permitidos por razones de seguridad",
+         "recordNotFound": "Registro de archivo no encontrado en la base de datos para la ruta: {fileAbsPath}",
+         "onlyImagesAllowed": "Solo se permiten archivos de imagen",
+         "invalidImageType": "Tipo de archivo de imagen inválido"
+      }
+   },
+   "analytics": {
+      "success": {
+
+      },
+      "errors": {
+
+      }
+   },
+   "alerts": {
+      "success": {
+         "retrieved": "Alertas recuperadas con éxito",
+         "created": "Alerta creada con éxito",
+         "updated": "Alerta actualizada con éxito",
+         "deleted": "Alerta eliminada con éxito",
+         "allDeleted": "Todas las alertas han sido eliminadas",
+         "statusUpdated": "Estado de alerta actualizado con éxito",
+         "acknowledged": "Alerta reconocida con éxito",
+         "resolved": "Alerta resuelta con éxito",
+         "dismissed": "Alerta descartada con éxito",
+         "bulkUpdated": "Alertas actualizadas en lote con éxito",
+         "resolvedDeleted": "Alertas resueltas eliminadas con éxito",
+         "maintenanceAlertsGenerated": "Alertas de mantenimiento generadas con éxito"
+      },
+      "errors": {
+         "notFound": "Alerta no encontrada",
+         "invalidType": "Tipo de alerta inválido especificado",
+         "invalidStatus": "Estado de alerta inválido especificado",
+         "invalidPriority": "Prioridad de alerta inválida especificada",
+         "invalidTitle": "El título de la alerta debe tener al menos 2 caracteres",
+         "invalidMessage": "El mensaje de la alerta debe tener al menos 5 caracteres",
+         "cannotModifyResolved": "No se pueden modificar alertas resueltas",
+         "cannotDeleteActive": "No se pueden eliminar alertas activas",
+         "duplicateActiveAlert": "Ya existe una alerta activa de este tipo para este objetivo",
+         "noAlertsSelected": "No se seleccionaron alertas para la operación en lote",
+         "noAlertsToDelete": "No se encontraron alertas para eliminar",
+         "invalidStatusTransition": "Transición de estado inválida de {{from}} a {{to}}",
+         "atLeastOneTargetRequired": "Debe especificarse al menos un objetivo (vehículo, operador o usuario)"
+      },
+      "validation": {
+         "titleMinLength": "El título debe tener al menos 2 caracteres",
+         "messageMinLength": "El mensaje debe tener al menos 5 caracteres"
+      },
+      "types": {
+         "maintenance": "Mantenimiento",
+         "fuel": "Combustible",
+         "security": "Seguridad",
+         "operational": "Operacional",
+         "system": "Sistema"
+      },
+      "priorities": {
+         "low": "Baja",
+         "medium": "Media",
+         "high": "Alta",
+         "critical": "Crítica"
+      },
+      "statuses": {
+         "active": "Activa",
+         "read": "Leída",
+         "resolved": "Resuelta",
+         "dismissed": "Descartada"
+      },
+      "form": {
+         "type": "Tipo de alerta",
+         "priority": "Prioridad",
+         "title": "Título",
+         "titlePlaceholder": "Ingrese el título de la alerta",
+         "message": "Mensaje",
+         "messagePlaceholder": "Ingrese el mensaje de la alerta",
+         "status": "Estado",
+         "vehicle": "Vehículo (Opcional)",
+         "vehiclePlaceholder": "Seleccionar un vehículo",
+         "operator": "Operador (Opcional)",
+         "operatorPlaceholder": "Seleccionar un operador"
+      },
+      "dialogs": {
+         "createTitle": "Crear nueva alerta",
+         "createButton": "Crear alerta",
+         "viewTitle": "Detalles de la alerta",
+         "editTitle": "Editar alerta",
+         "updateButton": "Actualizar alerta",
+         "deleteButton": "Eliminar alerta"
+      },
+      "table": {
+         "selectAll": "Seleccionar todo",
+         "selectRow": "Seleccionar fila",
+         "id": "ID",
+         "title": "Título",
+         "type": "Tipo",
+         "priority": "Prioridad",
+         "status": "Estado",
+         "vehicle": "Vehículo",
+         "operator": "Operador",
+         "createdAt": "Fecha de creación",
+         "readAt": "Fecha de lectura"
+      },
+      "filters": {
+         "searchByTitle": "Buscar por título...",
+         "searchByVehicle": "Buscar por vehículo...",
+         "filterByStatus": "Filtrar por estado...",
+         "filterByType": "Filtrar por tipo...",
+         "filterByPriority": "Filtrar por prioridad..."
+      }
+   },
+   "validation": {
+      "general": {
+         "requiredFieldMissing": "Falta un campo obligatorio",
+         "invalidDateFormat": "Formato de fecha inválido proporcionado",
+         "invalidTimeFormat": "Formato de hora inválido proporcionado",
+         "invalidNumericValue": "Valor numérico inválido proporcionado",
+         "valueOutOfRange": "El valor está fuera del rango aceptable"
+      },
+      "formats": {
+         "invalidSerialNumber": "Formato de número de serie inválido",
+         "invalidLicensePlate": "Formato de matrícula inválido",
+         "invalidPhoneNumber": "Formato de número de teléfono inválido",
+         "invalidEmail": "Formato de dirección de correo electrónico inválido",
+         "invalidLicenseNumber": "Formato de número de licencia inválido"
+      }
+   },
+   "dashboard": {
+      "widgets": {
+         "totalLiters": "Total Litros",
+         "totalFields": "Total Campos",
+         "activeVehicles": "Vehículos Activos",
+         "operationsToday": "Operaciones Hoy",
+         "totalOperators": "Total Operadores",
+         "completedOperations": "Operaciones Completadas",
+         "totalWorkHours": "Total Horas de Trabajo",
+         "totalCost": "Costo Total"
+      },
+      "cards": {
+         "recentOperations": {
+            "title": "Operaciones Completadas Recientemente",
+            "noOperations": "No se encontraron operaciones completadas recientemente",
+            "errorLoadingData": "Error al cargar las operaciones completadas recientemente"
+         }
+      },
+      "success": {
+         "widgetsRetrieved": "Widgets del panel recuperados exitosamente"
+      }
+   },
+   "language": {
+      "success": {
+         "preferenceUpdated": "Preferencia de idioma actualizada exitosamente",
+         "preferenceRetrieved": "Preferencia de idioma recuperada exitosamente"
+      },
+      "errors": {
+         "invalid": "Idioma especificado inválido"
+      }
+   },
+   "common": {
+      "notAvailable": "N/D",
+      "invalidDate": "Fecha inválida",
+      "loading": "Cargando...",
+      "loadingCreate": "Creando...",
+      "loadingUpdate": "Actualizando...",
+      "loadingDelete": "Eliminando...",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "delete": "Eliminar",
+      "edit": "Editar",
+      "view": "Ver",
+      "create": "Crear",
+      "update": "Actualizar",
+      "actions": "Acciones",
+      "next": "Siguiente",
+      "previous": "Anterior",
+      "confirm": "Confirmar"
+   },
+   "status": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "pending": "Pendiente",
+      "cancelled": "Cancelado",
+      "maintenance": "Mantenimiento",
+      "retired": "Retirado",
+      "approved": "Aprobado",
+      "rejected": "Rechazado",
+      "processing": "Procesando",
+      "completed": "Completado",
+      "draft": "Borrador",
+      "published": "Publicado",
+      "planned": "Planificado",
+      "suspended": "Suspendido",
+      "deleted": "Eliminado",
+      "archived": "Archivado",
+      "revoked": "Revocado",
+      "expired": "Expirado"
+   },
+   "navigation": {
+      "dashboard": "Panel",
+      "fields": "Campos",
+      "vehicles": "Vehículos",
+      "operations": "Operaciones",
+      "operators": "Operadores",
+      "refuel": "Repostaje",
+      "maintenance": "Mantenimiento",
+      "alerts": "Alertas",
+      "trackers": "Localizadores",
+      "users": "Usuarios",
+      "roles": "Roles",
+      "settings": "Configuración",
+      "logout": "Cerrar Sesión",
+      "academic": "Académico"
+   }
+}

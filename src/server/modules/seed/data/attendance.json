@@ -1,0 +1,314 @@
+[
+  {
+    "studentCode": "STU001",
+    "classId": "CLS001",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU002",
+    "classId": "CLS001",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU009",
+    "classId": "CLS001",
+    "date": "2024-09-02",
+    "status": "late",
+    "notes": "Arrived 10 minutes late due to bus delay",
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU014",
+    "classId": "CLS001",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU001",
+    "classId": "CLS001",
+    "date": "2024-09-03",
+    "status": "absent",
+    "notes": "Sick leave - parent notification received",
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU002",
+    "classId": "CLS001",
+    "date": "2024-09-03",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU009",
+    "classId": "CLS001",
+    "date": "2024-09-03",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU014",
+    "classId": "CLS001",
+    "date": "2024-09-03",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU003",
+    "classId": "CLS003",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU004",
+    "classId": "CLS003",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU010",
+    "classId": "CLS003",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU015",
+    "classId": "CLS003",
+    "date": "2024-09-02",
+    "status": "late",
+    "notes": "Doctor appointment - excused tardiness",
+    "markedBy": "TCH001234567"
+  },
+  {
+    "studentCode": "STU001",
+    "classId": "CLS004",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH002345678"
+  },
+  {
+    "studentCode": "STU002",
+    "classId": "CLS004",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH002345678"
+  },
+  {
+    "studentCode": "STU009",
+    "classId": "CLS004",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH002345678"
+  },
+  {
+    "studentCode": "STU014",
+    "classId": "CLS004",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH002345678"
+  },
+  {
+    "studentCode": "STU001",
+    "classId": "CLS007",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH003456789"
+  },
+  {
+    "studentCode": "STU002",
+    "classId": "CLS007",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH003456789"
+  },
+  {
+    "studentCode": "STU009",
+    "classId": "CLS007",
+    "date": "2024-09-02",
+    "status": "late",
+    "notes": "Late arrival continued from previous class",
+    "markedBy": "TCH003456789"
+  },
+  {
+    "studentCode": "STU014",
+    "classId": "CLS007",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH003456789"
+  },
+  {
+    "studentCode": "STU005",
+    "classId": "CLS009",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH005678901"
+  },
+  {
+    "studentCode": "STU006",
+    "classId": "CLS009",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH005678901"
+  },
+  {
+    "studentCode": "STU011",
+    "classId": "CLS009",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH005678901"
+  },
+  {
+    "studentCode": "STU001",
+    "classId": "CLS012",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH004567890"
+  },
+  {
+    "studentCode": "STU002",
+    "classId": "CLS012",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH004567890"
+  },
+  {
+    "studentCode": "STU009",
+    "classId": "CLS012",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH004567890"
+  },
+  {
+    "studentCode": "STU014",
+    "classId": "CLS012",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH004567890"
+  },
+  {
+    "studentCode": "STU001",
+    "classId": "CLS015",
+    "date": "2024-09-02",
+    "status": "excused",
+    "notes": "Medical excuse - unable to participate in physical activity",
+    "markedBy": "TCH007890123"
+  },
+  {
+    "studentCode": "STU003",
+    "classId": "CLS015",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH007890123"
+  },
+  {
+    "studentCode": "STU005",
+    "classId": "CLS015",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH007890123"
+  },
+  {
+    "studentCode": "STU007",
+    "classId": "CLS015",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH007890123"
+  },
+  {
+    "studentCode": "STU001",
+    "classId": "CLS018",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH008901234"
+  },
+  {
+    "studentCode": "STU002",
+    "classId": "CLS018",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH008901234"
+  },
+  {
+    "studentCode": "STU009",
+    "classId": "CLS018",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH008901234"
+  },
+  {
+    "studentCode": "STU014",
+    "classId": "CLS018",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH008901234"
+  },
+  {
+    "studentCode": "STU001",
+    "classId": "CLS020",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH009012345"
+  },
+  {
+    "studentCode": "STU002",
+    "classId": "CLS020",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH009012345"
+  },
+  {
+    "studentCode": "STU009",
+    "classId": "CLS020",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH009012345"
+  },
+  {
+    "studentCode": "STU014",
+    "classId": "CLS020",
+    "date": "2024-09-02",
+    "status": "present",
+    "notes": null,
+    "markedBy": "TCH009012345"
+  }
+]

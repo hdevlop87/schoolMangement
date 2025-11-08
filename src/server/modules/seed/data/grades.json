@@ -1,0 +1,245 @@
+[
+  {
+    "assessmentId": "ASS001",
+    "studentCode": "STU001",
+    "marksObtained": "22.50",
+    "feedback": "Good understanding of linear equations. Minor calculation error in problem 3.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS001",
+    "studentCode": "STU002",
+    "marksObtained": "24.00",
+    "feedback": "Excellent work! All steps shown clearly.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS001",
+    "studentCode": "STU009",
+    "marksObtained": "18.75",
+    "feedback": "Needs more practice with solving multi-step equations.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS001",
+    "studentCode": "STU014",
+    "marksObtained": "21.00",
+    "feedback": "Good progress. Work on checking your answers.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS002",
+    "studentCode": "STU001",
+    "marksObtained": "45.50",
+    "feedback": "Strong graphing skills. Excellent interpretation of function behavior.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS002",
+    "studentCode": "STU002",
+    "marksObtained": "48.00",
+    "feedback": "Outstanding work! Perfect graphs and clear explanations.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS002",
+    "studentCode": "STU009",
+    "marksObtained": "32.25",
+    "feedback": "Good effort. Need to review vertex form of quadratics.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS002",
+    "studentCode": "STU014",
+    "marksObtained": "41.75",
+    "feedback": "Much improved! Good use of scale and labeling.",
+    "status": "graded",
+    "gradedBy": "TCH001234567",
+    "updatedBy": "TCH001234567"
+  },
+  {
+    "assessmentId": "ASS004",
+    "studentCode": "STU001",
+    "marksObtained": "27.00",
+    "feedback": "Insightful analysis of metaphors and symbolism. Well-structured essay.",
+    "status": "graded",
+    "gradedBy": "TCH002345678",
+    "updatedBy": "TCH002345678"
+  },
+  {
+    "assessmentId": "ASS004",
+    "studentCode": "STU002",
+    "marksObtained": "28.50",
+    "feedback": "Excellent literary analysis. Strong use of textual evidence.",
+    "status": "graded",
+    "gradedBy": "TCH002345678",
+    "updatedBy": "TCH002345678"
+  },
+  {
+    "assessmentId": "ASS004",
+    "studentCode": "STU009",
+    "marksObtained": "21.75",
+    "feedback": "Good ideas but needs more specific examples from the poems.",
+    "status": "graded",
+    "gradedBy": "TCH002345678",
+    "updatedBy": "TCH002345678"
+  },
+  {
+    "assessmentId": "ASS004",
+    "studentCode": "STU014",
+    "marksObtained": "24.00",
+    "feedback": "Solid analysis. Work on connecting themes across different poems.",
+    "status": "graded",
+    "gradedBy": "TCH002345678",
+    "updatedBy": "TCH002345678"
+  },
+  {
+    "assessmentId": "ASS006",
+    "studentCode": "STU001",
+    "marksObtained": "32.50",
+    "feedback": "Detailed observations and accurate diagrams. Excellent lab technique.",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS006",
+    "studentCode": "STU002",
+    "marksObtained": "33.75",
+    "feedback": "Outstanding report! Clear drawings and thorough analysis.",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS006",
+    "studentCode": "STU009",
+    "marksObtained": "26.25",
+    "feedback": "Good effort. Need more detail in the written observations.",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS006",
+    "studentCode": "STU014",
+    "marksObtained": "29.50",
+    "feedback": "Nice improvement in scientific writing. Clear methodology.",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS007",
+    "studentCode": "STU001",
+    "marksObtained": "18.00",
+    "feedback": "Good understanding of basic genetics. Practice Punnett squares more.",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS007",
+    "studentCode": "STU002",
+    "marksObtained": "19.50",
+    "feedback": "Excellent mastery of inheritance patterns!",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS007",
+    "studentCode": "STU009",
+    "marksObtained": "14.25",
+    "feedback": "Need to review dominant and recessive traits. Come for extra help.",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS007",
+    "studentCode": "STU014",
+    "marksObtained": "16.75",
+    "feedback": "Better understanding shown. Keep practicing probability calculations.",
+    "status": "graded",
+    "gradedBy": "TCH003456789",
+    "updatedBy": "TCH003456789"
+  },
+  {
+    "assessmentId": "ASS009",
+    "studentCode": "STU001",
+    "marksObtained": "41.25",
+    "feedback": "Good knowledge of civilizations. Excellent map work.",
+    "status": "graded",
+    "gradedBy": "TCH004567890",
+    "updatedBy": "TCH004567890"
+  },
+  {
+    "assessmentId": "ASS009",
+    "studentCode": "STU002",
+    "marksObtained": "43.50",
+    "feedback": "Comprehensive understanding demonstrated. Well done!",
+    "status": "graded",
+    "gradedBy": "TCH004567890",
+    "updatedBy": "TCH004567890"
+  },
+  {
+    "assessmentId": "ASS009",
+    "studentCode": "STU009",
+    "marksObtained": "34.75",
+    "feedback": "Good basic knowledge. Review timeline of events.",
+    "status": "graded",
+    "gradedBy": "TCH004567890",
+    "updatedBy": "TCH004567890"
+  },
+  {
+    "assessmentId": "ASS009",
+    "studentCode": "STU014",
+    "marksObtained": "38.25",
+    "feedback": "Solid performance. Strong geographical knowledge shown.",
+    "status": "graded",
+    "gradedBy": "TCH004567890",
+    "updatedBy": "TCH004567890"
+  },
+  {
+    "assessmentId": "ASS015",
+    "studentCode": "STU005",
+    "marksObtained": "27.50",
+    "feedback": "Good lab technique and safety practices. Clear data recording.",
+    "status": "graded",
+    "gradedBy": "TCH005678901",
+    "updatedBy": "TCH005678901"
+  },
+  {
+    "assessmentId": "ASS015",
+    "studentCode": "STU006",
+    "marksObtained": "29.25",
+    "feedback": "Excellent understanding of chemical equations. Perfect lab setup.",
+    "status": "graded",
+    "gradedBy": "TCH005678901",
+    "updatedBy": "TCH005678901"
+  },
+  {
+    "assessmentId": "ASS015",
+    "studentCode": "STU011",
+    "marksObtained": "24.75",
+    "feedback": "Good observations. Need more detail in analysis section.",
+    "status": "graded",
+    "gradedBy": "TCH005678901",
+    "updatedBy": "TCH005678901"
+  }
+]

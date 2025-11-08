@@ -1,0 +1,570 @@
+{
+   "languages": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "العربية",
+      "es": "Español"
+   },
+   "auth": {
+      "success": {
+         "login": "Connexion réussie",
+         "logout": "Déconnexion réussie",
+         "register": "Inscription réussie. Bienvenue !",
+         "passwordReset": "Réinitialisation du mot de passe envoyée",
+         "tokenGenerated": "Jeton d'accès généré avec succès",
+         "tokenRefreshed": "Jeton d'accès actualisé avec succès",
+         "refreshTokenGenerated": "Jeton de rafraîchissement généré avec succès",
+         "refreshTokenRefreshed": "Jeton de rafraîchissement actualisé avec succès",
+         "authInitialized": "Authentification initialisée avec succès"
+      },
+      "errors": {
+         "emailExists": "Un compte avec cette adresse e-mail existe déjà",
+         "credentialsMissing": "Un ou plusieurs champs requis sont vides",
+         "invalidCredentials": "Identifiants invalides. Veuillez réessayer",
+         "accessDenied": "Accès refusé. Vous n'avez pas les droits d'accès à cette ressource",
+         "emailMissing": "L'e-mail est manquant. Veuillez fournir une adresse e-mail",
+         "tokenExpired": "Le jeton d'accès a expiré. Veuillez actualiser votre jeton",
+         "tokenVerificationFailed": "Échec de la vérification du jeton d'accès",
+         "tokenMissing": "Le jeton d'accès est manquant. Veuillez fournir un jeton d'accès",
+         "tokenInvalid": "Le jeton d'accès fourni est invalide. Veuillez obtenir un jeton d'accès valide",
+         "refreshTokenExpired": "Session expirée. Veuillez vous reconnecter",
+         "refreshTokenVerificationFailed": "Échec de la vérification du jeton de rafraîchissement",
+         "refreshTokenMissing": "Jeton de rafraîchissement manquant. Veuillez fournir un jeton de rafraîchissement",
+         "refreshTokenInvalid": "Jeton de rafraîchissement invalide. Veuillez vous reconnecter",
+         "authInitFailed": "Échec de l'initialisation de l'authentification"
+      },
+      "validation": {
+         "emailInvalid": "Format d'adresse e-mail invalide",
+         "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères"
+      }
+   },
+   "users": {
+      "success": {
+         "retrieved": "Utilisateur récupéré avec succès",
+         "allRetrieved": "Utilisateurs récupérés avec succès",
+         "created": "Utilisateur créé avec succès",
+         "updated": "Utilisateur mis à jour avec succès",
+         "deleted": "Utilisateur supprimé avec succès",
+         "allDeleted": "Tous les utilisateurs ont été supprimés avec succès"
+      },
+      "errors": {
+         "notFound": "Aucun utilisateur trouvé avec les informations fournies",
+         "adminRoleNotFound": "Rôle administrateur introuvable",
+             "idExists": "L'ID utilisateur existe déjà"
+      },
+      "validation": {
+         "nameMinLength": "Le nom doit contenir au moins 2 caractères",
+         "emailInvalid": "Format d'adresse e-mail invalide",
+         "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères",
+         "passwordConfirmationRequired": "La confirmation du mot de passe est requise",
+         "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+         "roleRequired": "Veuillez sélectionner un rôle valide"
+      },
+      "form": {
+         "fullName": "Nom Complet",
+         "fullNamePlaceholder": "Saisir le nom complet",
+         "image": "Image",
+         "email": "Adresse Email",
+         "emailPlaceholder": "Saisir l'adresse email",
+         "password": "Mot de Passe",
+         "passwordPlaceholder": "Saisir le mot de passe",
+         "newPassword": "Nouveau Mot de Passe (laisser vide pour conserver l'actuel)",
+         "confirmPassword": "Confirmer le Mot de Passe",
+         "confirmPasswordPlaceholder": "Confirmer le mot de passe",
+         "userRole": "Rôle de l'Utilisateur"
+      },
+      "roles": {
+         "admin": "Administrateur",
+         "user": "Utilisateur",
+         "moderator": "Modérateur"
+      },
+      "dialogs": {
+         "createTitle": "Créer un Nouvel Utilisateur",
+         "createButton": "Créer Utilisateur",
+         "viewTitle": "Détails de l'Utilisateur",
+         "editTitle": "Modifier l'Utilisateur",
+         "updateButton": "Mettre à Jour l'Utilisateur",
+         "deleteButton": "Supprimer l'Utilisateur"
+      },
+      "table": {
+         "selectAll": "Tout sélectionner",
+         "selectRow": "Sélectionner la ligne",
+         "id": "ID",
+         "name": "Nom",
+         "email": "Email",
+         "role": "Rôle",
+         "status": "Statut"
+      },
+      "filters": {
+         "searchByName": "Rechercher par nom...",
+         "searchByEmail": "Rechercher par email...",
+         "filterByRole": "Filtrer par rôle..."
+      }
+   },
+   "roles": {
+      "success": {
+         "retrieved": "Rôle récupéré avec succès",
+         "allRetrieved": "Tous les rôles récupérés avec succès",
+         "created": "Rôle créé avec succès",
+         "updated": "Rôle mis à jour avec succès",
+         "deleted": "Rôle supprimé avec succès",
+         "allDeleted": "Tous les rôles ont été supprimés",
+         "initialized": "Rôles initialisés avec succès",
+         "assignedToUser": "Le rôle a été attribué avec succès à l'utilisateur",
+         "userRolesRetrieved": "Les rôles utilisateur ont été récupérés avec succès",
+         "usersByRoleRetrieved": "Les utilisateurs pour le rôle spécifié ont été récupérés avec succès",
+         "userRoleDeleted": "Le rôle utilisateur a été supprimé avec succès"
+      },
+      "errors": {
+         "exists": "Le nom du rôle est déjà utilisé. Veuillez en choisir un autre",
+         "notFound": "Rôle introuvable",
+         "userRoleExists": "Le rôle spécifié pour l'utilisateur existe déjà",
+         "userRoleNotFound": "Le rôle spécifié pour l'utilisateur n'a pas été trouvé"
+      },
+      "validation": {
+         "nameRequired": "Un nom de rôle approprié est requis",
+         "nameMinLength": "Le nom du rôle doit contenir au moins 2 caractères"
+      },
+      "form": {
+         "name": "Nom du Rôle",
+         "namePlaceholder": "Saisir le nom du rôle",
+         "description": "Description (Optionnel)",
+         "descriptionPlaceholder": "Saisir la description du rôle"
+      },
+      "dialogs": {
+         "createTitle": "Créer un Nouveau Rôle",
+         "createButton": "Créer Rôle",
+         "viewTitle": "Détails du Rôle",
+         "editTitle": "Modifier le Rôle",
+         "updateButton": "Mettre à Jour le Rôle",
+         "deleteButton": "Supprimer le Rôle"
+      },
+      "table": {
+         "selectAll": "Tout sélectionner",
+         "selectRow": "Sélectionner la ligne",
+         "id": "ID",
+         "roleName": "Nom du Rôle",
+         "description": "Description",
+         "noDescription": "Aucune description"
+      },
+      "filters": {
+         "searchByName": "Rechercher par nom de rôle...",
+         "searchByDescription": "Rechercher par description..."
+      }
+   },
+   "system": {
+      "success": {
+         "demoSeeded": "Système de démonstration initialisé avec succès",
+         "dataCleared": "Toutes les données ont été effacées avec succès",
+         "fieldsSeeded": "Champs initialisés avec succès",
+         "vehiclesSeeded": "Véhicules initialisés avec succès",
+         "operatorsSeeded": "Opérateurs initialisés avec succès",
+         "operationsSeeded": "Opérations initialisées avec succès",
+         "refuelsSeeded": "Ravitaillements initialisés avec succès"
+      },
+      "info": {
+         "seedingStarted": "Démarrage de l'initialisation des données de démonstration...",
+         "clearingData": "Effacement de toutes les données...",
+         "operationsCleared": "Opérations effacées",
+         "refuelsCleared": "Ravitaillements effacés",
+         "operatorsCleared": "Opérateurs effacés",
+         "vehiclesCleared": "Véhicules effacés",
+         "fieldsCleared": "Champs effacés",
+         "usersCleared": "Utilisateurs effacés"
+      },
+      "errors": {
+         "seedingDisabled": "L'initialisation du système est désactivée dans cet environnement",
+         "invalidSeedApiKey": "Clé API d'initialisation invalide fournie"
+      }
+   },
+   "files": {
+      "success": {
+         "retrieved": "Fichier récupéré avec succès",
+         "created": "Fichier créé avec succès",
+         "updated": "Fichier mis à jour avec succès",
+         "deleted": "Fichier supprimé avec succès",
+         "served": "Fichier servi avec succès",
+         "streamed": "Fichier diffusé avec succès"
+      },
+      "errors": {
+         "notFound": "Fichier introuvable",
+         "nameExists": "Un fichier avec ce nom existe déjà",
+         "sizeTooLarge": "La taille du fichier dépasse la limite maximale autorisée",
+         "typeNotAllowed": "Le type de fichier n'est pas autorisé",
+         "accessDenied": "Vous n'avez pas l'autorisation d'accéder à ce fichier",
+         "uploadFailed": "Échec du téléchargement du fichier",
+         "deleteFailed": "Échec de la suppression du fichier",
+         "invalidType": "Type de fichier invalide",
+         "tooLarge": "La taille du fichier dépasse la limite maximale autorisée",
+         "invalidEntityType": "Type d'entité invalide",
+         "entityNotFound": "Entité introuvable",
+         "insufficientPermissions": "Permissions insuffisantes pour accéder à ce fichier",
+         "physicalNotFound": "Fichier physique introuvable sur le stockage",
+         "mimeTypeMismatch": "L'extension du fichier ne correspond pas au type de fichier - risque de sécurité potentiel",
+         "executableNotAllowed": "Les fichiers exécutables ne sont pas autorisés pour des raisons de sécurité",
+         "recordNotFound": "Enregistrement de fichier introuvable dans la base de données pour le chemin: {fileAbsPath}",
+         "onlyImagesAllowed": "Seuls les fichiers image sont autorisés",
+         "invalidImageType": "Type d'image invalide"
+      }
+   },
+   "common": {
+      "minutes": "minutes",
+      "warning": "Avertissement",
+      "hours": "heures",
+      "notAssigned": "Non Assigné",
+      "notSpecified": "Non Spécifié",
+      "seconds": "secondes",
+      "minute": "minute",
+      "confirmAction": "Cette action ne peut pas être annulée.",
+      "total": "Total",
+      "none": "Aucun",
+      "notAvailable": "N/D",
+      "invalidDate": "Date invalide",
+      "loading": "Chargement...",
+      "loadingCreate": "Création...",
+      "loadingUpdate": "Mise à jour...",
+      "loadingDelete": "Suppression...",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "edit": "Modifier",
+      "view": "Voir",
+      "create": "Créer",
+      "update": "Mettre à jour",
+      "actions": "Actions",
+      "next": "Suivant",
+      "previous": "Précédent",
+      "confirm": "Confirmer"
+   },
+   "settings": {
+      "success": {
+         "operationalUpdated": "Préférences opérationnelles mises à jour avec succès",
+         "deleted": "Paramètres supprimés avec succès",
+         "securityUpdated": "Paramètres de sécurité mis à jour avec succès",
+         "seeded": "Paramètres initialisés avec succès",
+         "retrieved": "Paramètres récupérés avec succès",
+         "themeUpdated": "Préférence de thème mise à jour avec succès",
+         "reset": "Paramètres réinitialisés aux valeurs par défaut avec succès",
+         "languageUpdated": "Préférence de langue mise à jour avec succès",
+         "allDeleted": "Tous les paramètres supprimés avec succès",
+         "securityRetrieved": "Paramètres de sécurité récupérés avec succès",
+         "notificationsRetrieved": "Préférences de notification récupérées avec succès",
+         "notificationsUpdated": "Préférences de notification mises à jour avec succès",
+         "languageRetrieved": "Préférence de langue récupérée avec succès",
+         "themeRetrieved": "Préférence de thème récupérée avec succès",
+         "systemRetrieved": "Paramètres système récupérés avec succès",
+         "operationalRetrieved": "Préférences opérationnelles récupérées avec succès",
+         "updated": "Paramètres mis à jour avec succès"
+      },
+      "seed": {
+         "confirm": "Procéder à l'Initialisation",
+         "errorDescription": "Une erreur s'est produite lors de l'initialisation de la base de données. Veuillez réessayer.",
+         "seeding": "Initialisation...",
+         "error": "Échec de l'initialisation des données de démonstration",
+         "confirmDescription": "Cette action effacera toutes les données existantes et remplira la base de données avec des données de démonstration.",
+         "button": "Initialiser les Données de Démonstration",
+         "successDescription": "La base de données a été remplie avec des données de démonstration.",
+         "warningPoint3": "Cette action ne peut pas être annulée",
+         "warningPoint1": "Toutes les données existantes seront définitivement supprimées",
+         "warningPoint2": "Les données de démonstration seront insérées incluant véhicules, opérateurs, opérations, enregistrements de maintenance et alertes",
+         "success": "Données de démonstration initialisées avec succès",
+         "warningTitle": "⚠️ Avertissement:",
+         "confirmTitle": "Confirmer l'Initialisation des Données de Démonstration"
+      },
+      "security": {
+         "apiKeyDescription": "Cette clé est utilisée pour les opérations système et les intégrations.",
+         "passwordExpiry": "Expiration du Mot de Passe (90 jours)",
+         "description": "Gérer les préférences de sécurité et les contrôles d'accès.",
+         "apiKey": "Clé API",
+         "sessionTimeout": "Délai d'Expiration Automatique de Session",
+         "loginNotifications": "Notifications de Connexion",
+         "title": "Paramètres de Sécurité",
+         "twoFactorAuth": "Authentification à Deux Facteurs"
+      },
+      "system": {
+         "language": "Langue",
+         "confirmDescription": "Cela créera les rôles système par défaut et l'utilisateur administrateur s'ils n'existent pas.",
+         "confirm": "Initialiser le Système",
+         "confirmTitle": "Initialiser les Valeurs par Défaut du Système",
+         "environment": "Environnement",
+         "title": "Informations Système",
+         "version": "Version",
+         "lastUpdate": "Dernière Mise à Jour",
+         "button": "Initialiser le Système",
+         "lightTheme": "Clair",
+         "darkTheme": "Sombre",
+         "systemTheme": "Système",
+         "theme": "Thème",
+         "nodeVersion": "Version Node"
+      },
+      "operational": {
+         "maintenanceInterval": "Intervalle d'Alerte de Maintenance",
+         "fuelThresholdDescription": "Alerter quand le niveau de carburant tombe en dessous de ce pourcentage",
+         "fuelThresholdAlerts": "Alertes de Seuil de Carburant",
+         "fuelThreshold": "Seuil d'Alerte de Carburant",
+         "timeZone": "Fuseau Horaire",
+         "title": "Paramètres Opérationnels",
+         "locationUpdateDescription": "Fréquence de mise à jour des emplacements des véhicules",
+         "maintenanceIntervalDescription": "Heures entre les rappels de maintenance",
+         "autoTrackLocation": "Suivi Automatique de l'Emplacement du Véhicule",
+         "operationAutoStart": "Démarrage Automatique des Opérations",
+         "maintenanceReminders": "Rappels de Maintenance",
+         "description": "Configurer les préférences opérationnelles pour les véhicules et opérations.",
+         "locationUpdateInterval": "Fréquence de Mise à Jour de l'Emplacement",
+         "preferences": "Préférences"
+      },
+      "errors": {
+         "userSettingsNotFound": "Paramètres utilisateur introuvables",
+         "notFound": "Paramètres non trouvés pour cet utilisateur",
+         "deleteAllFailed": "Échec de la suppression de tous les paramètres",
+         "invalidLocationUpdateInterval": "Intervalle de mise à jour d'emplacement invalide",
+         "invalidFuelThreshold": "Valeur de seuil de carburant invalide",
+         "updateFailed": "Échec de la mise à jour des paramètres utilisateur",
+         "invalidTheme": "Thème spécifié invalide",
+         "invalidLanguage": "Langue spécifiée invalide",
+         "invalidMaintenanceInterval": "Intervalle de maintenance invalide",
+         "retrievalFailed": "Échec de la récupération des paramètres utilisateur",
+         "invalidSessionTimeout": "Valeur de délai d'expiration de session invalide",
+         "invalidTimeZone": "Fuseau horaire spécifié invalide",
+         "validationFailed": "Échec de la validation des paramètres",
+         "resetFailed": "Échec de la réinitialisation des paramètres utilisateur",
+         "noSettingsToDelete": "Aucun paramètre trouvé à supprimer"
+      },
+      "notifications": {
+         "title": "Paramètres de Notification",
+         "operationUpdates": "Mises à Jour d'Opération",
+         "smsNotifications": "Notifications SMS",
+         "maintenanceAlerts": "Alertes de Maintenance",
+         "description": "Configurer comment et quand vous recevez des notifications sur les événements système.",
+         "fuelAlerts": "Alertes de Niveau de Carburant",
+         "emailNotifications": "Notifications Email",
+         "systemNotifications": "Notifications Système"
+      },
+      "clear": {
+         "confirm": "Effacer Toutes les Données",
+         "button": "Effacer Toutes les Données",
+         "confirmDescription": "Cela supprimera définitivement toutes les données de la base de données.",
+         "confirmTitle": "Effacer Toutes les Données",
+         "warningMessage": "Cette action supprimera tous les véhicules, opérateurs, opérations, enregistrements de maintenance, alertes et données utilisateur."
+      },
+      "database": {
+         "description": "Gérer les opérations de base de données et l'initialisation des données de démonstration.",
+         "title": "Gestion de Base de Données"
+      }
+   },
+   "alerts": {
+      "success": {
+         "retrieved": "Alertes récupérées avec succès",
+         "created": "Alerte créée avec succès",
+         "updated": "Alerte mise à jour avec succès",
+         "deleted": "Alerte supprimée avec succès",
+         "allDeleted": "Toutes les alertes ont été supprimées",
+         "statusUpdated": "Statut d'alerte mis à jour avec succès",
+         "acknowledged": "Alerte accusée réception avec succès",
+         "resolved": "Alerte résolue avec succès",
+         "dismissed": "Alerte rejetée avec succès",
+         "bulkUpdated": "Alertes mises à jour en lot avec succès",
+         "resolvedDeleted": "Alertes résolues supprimées avec succès",
+         "maintenanceAlertsGenerated": "Alertes de maintenance générées avec succès"
+      },
+      "errors": {
+         "notFound": "Alerte non trouvée",
+         "invalidType": "Type d'alerte invalide spécifié",
+         "invalidStatus": "Statut d'alerte invalide spécifié",
+         "invalidPriority": "Priorité d'alerte invalide spécifiée",
+         "invalidTitle": "Le titre de l'alerte doit contenir au moins 2 caractères",
+         "invalidMessage": "Le message de l'alerte doit contenir au moins 5 caractères",
+         "cannotModifyResolved": "Impossible de modifier les alertes résolues",
+         "cannotDeleteActive": "Impossible de supprimer les alertes actives",
+         "duplicateActiveAlert": "Une alerte active de ce type existe déjà pour cette cible",
+         "noAlertsSelected": "Aucune alerte sélectionnée pour l'opération en lot",
+         "noAlertsToDelete": "Aucune alerte trouvée à supprimer",
+         "invalidStatusTransition": "Transition de statut invalide de {{from}} à {{to}}",
+         "atLeastOneTargetRequired": "Au moins une cible (véhicule, opérateur, ou utilisateur) doit être spécifiée"
+      },
+      "validation": {
+         "titleMinLength": "Le titre doit contenir au moins 2 caractères",
+         "messageMinLength": "Le message doit contenir au moins 5 caractères",
+         "titleRequired": "Le titre de l'alerte est requis",
+         "titleTooLong": "Le titre ne peut pas dépasser 200 caractères",
+         "targetRequired": "Au moins une cible (véhicule ou opérateur) doit être spécifiée",
+         "messageTooLong": "Le message ne peut pas dépasser 1000 caractères",
+         "messageRequired": "Le message d'alerte est requis"
+      },
+      "types": {
+         "maintenance": "Maintenance",
+         "fuel": "Carburant",
+         "security": "Sécurité",
+         "operational": "Opérationnel",
+         "system": "Système"
+      },
+      "priorities": {
+         "low": "Faible",
+         "medium": "Moyenne",
+         "high": "Élevée",
+         "critical": "Critique"
+      },
+      "statuses": {
+         "active": "Active",
+         "read": "Lue",
+         "resolved": "Résolue",
+         "dismissed": "Rejetée"
+      },
+      "form": {
+         "type": "Type d'alerte",
+         "priority": "Priorité",
+         "title": "Titre",
+         "titlePlaceholder": "Saisir le titre de l'alerte",
+         "message": "Message",
+         "messagePlaceholder": "Saisir le message de l'alerte",
+         "status": "Statut",
+         "vehicle": "Véhicule (Optionnel)",
+         "vehiclePlaceholder": "Sélectionner un véhicule",
+         "operator": "Opérateur (Optionnel)",
+         "operatorPlaceholder": "Sélectionner un opérateur"
+      },
+      "dialogs": {
+         "createTitle": "Créer une nouvelle alerte",
+         "createButton": "Créer alerte",
+         "viewTitle": "Détails de l'alerte",
+         "editTitle": "Modifier l'alerte",
+         "updateButton": "Mettre à jour l'alerte",
+         "deleteButton": "Supprimer l'alerte"
+      },
+      "table": {
+         "selectAll": "Tout sélectionner",
+         "selectRow": "Sélectionner la ligne",
+         "id": "ID",
+         "title": "Titre",
+         "type": "Type",
+         "priority": "Priorité",
+         "status": "Statut",
+         "vehicle": "Véhicule",
+         "operator": "Opérateur",
+         "createdAt": "Date de création",
+         "readAt": "Date de lecture",
+         "resolvedAt": "Date de Résolution"
+      },
+      "filters": {
+         "searchByTitle": "Rechercher par titre...",
+         "searchByVehicle": "Rechercher par véhicule...",
+         "filterByStatus": "Filtrer par statut...",
+         "filterByType": "Filtrer par type...",
+         "filterByPriority": "Filtrer par priorité..."
+      },
+      "card": {
+         "alertInfo": "Informations d'Alerte"
+      }
+   },
+   "validation": {
+      "general": {
+         "requiredFieldMissing": "Champ requis manquant",
+         "invalidDateFormat": "Format de date invalide fourni",
+         "invalidTimeFormat": "Format d'heure invalide fourni",
+         "invalidNumericValue": "Valeur numérique invalide fournie",
+         "valueOutOfRange": "La valeur est hors de la plage acceptable"
+      },
+      "formats": {
+         "invalidSerialNumber": "Format de numéro de série invalide",
+         "invalidLicensePlate": "Format de plaque d'immatriculation invalide",
+         "invalidPhoneNumber": "Format de numéro de téléphone invalide",
+         "invalidEmail": "Format d'adresse e-mail invalide",
+         "invalidLicenseNumber": "Format de numéro de licence invalide"
+      }
+   },
+   "dashboard": {
+      "widgets": {
+         "totalLiters": "Total Litres",
+         "totalFields": "Total Champs",
+         "activeVehicles": "Véhicules Actifs",
+         "operationsToday": "Opérations Aujourd'hui",
+         "totalOperators": "Total Opérateurs",
+         "completedOperations": "Opérations Terminées",
+         "totalWorkHours": "Total Heures de Travail",
+         "totalCost": "Coût Total"
+      },
+      "cards": {
+         "recentOperations": {
+            "title": "Opérations Récentes Terminées",
+            "noOperations": "Aucune opération récente terminée trouvée",
+            "errorLoadingData": "Erreur lors du chargement des opérations récentes terminées"
+         },
+         "latestAlerts": {
+            "noAlerts": "Aucune alerte récente trouvée",
+            "errorLoadingData": "Erreur de chargement des dernières alertes",
+            "title": "Dernières Alertes"
+         }
+      },
+      "success": {
+         "widgetsRetrieved": "Widgets du tableau de bord récupérés avec succès",
+         "operationDistributionRetrieved": "Données de distribution des opérations récupérées avec succès"
+      }
+   },
+   "language": {
+      "success": {
+         "preferenceUpdated": "Préférence de langue mise à jour avec succès",
+         "preferenceRetrieved": "Préférence de langue récupérée avec succès"
+      },
+      "errors": {
+         "invalid": "Langue invalide spécifiée"
+      }
+   },
+   "status": {
+      "active": "Actif",
+      "inactive": "Inactif",
+      "pending": "En Attente",
+      "cancelled": "Annulé",
+      "maintenance": "Maintenance",
+      "retired": "Retiré",
+      "approved": "Approuvé",
+      "rejected": "Rejeté",
+      "processing": "En Traitement",
+      "completed": "Terminé",
+      "draft": "Brouillon",
+      "published": "Publié",
+      "planned": "Planifié",
+      "suspended": "Suspendu",
+      "deleted": "Supprimé",
+      "archived": "Archivé",
+      "revoked": "Révoqué",
+      "expired": "Expiré"
+   },
+   "seed": {
+      "success": {
+         "systemSeeded": "Système initialisé avec succès"
+      }
+   },
+   "navigation": {
+      "dashboard": "Dashboard",
+      "fields": "Champs",
+      "vehicles": "Véhicules",
+      "operations": "Opérations",
+      "operators": "Opérateurs",
+      "refuel": "Ravitaillement",
+      "maintenance": "Maintenance",
+      "alerts": "Alertes",
+      "trackers": "Traceurs",
+      "users": "Utilisateurs",
+      "roles": "Rôles",
+      "settings": "Paramètres",
+      "logout": "Déconnecter",
+      "map": "Carte",
+      "academic": "Académique",
+      "communications": "Communications",
+      "students": "Étudiants",
+      "teachers": "Enseignants",
+      "parents": "Parents",
+      "classes": "Classes",
+      "subjects": "Matières",
+      "attendance": "Présence",
+      "exams": "Examens",
+      "grades": "Notes",
+      "calendar": "Calendrier",
+      "events": "Événements",
+      "announcements": "Annonces",
+      "fees": "Frais",
+      "feeTypes": "Types de Frais",
+      "financial": "Financier",
+      "transport": "Transport"
+   }
+}

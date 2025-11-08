@@ -1,0 +1,423 @@
+{
+   "languages": {
+      "en": "English",
+      "fr": "Français",
+      "ar": "العربية",
+      "es": "Español"
+   },
+   "auth": {
+      "success": {
+         "login": "تم تسجيل الدخول بنجاح",
+         "logout": "تم تسجيل الخروج بنجاح",
+         "register": "تم التسجيل بنجاح. مرحباً بك!",
+         "passwordReset": "تم إرسال إعادة تعيين كلمة المرور",
+         "tokenGenerated": "تم إنشاء رمز الوصول بنجاح",
+         "tokenRefreshed": "تم تحديث رمز الوصول بنجاح",
+         "refreshTokenGenerated": "تم إنشاء رمز التحديث بنجاح",
+         "refreshTokenRefreshed": "تم تحديث رمز التحديث بنجاح",
+         "authInitialized": "تم تهيئة المصادقة بنجاح"
+      },
+      "errors": {
+         "emailExists": "يوجد حساب بهذا البريد الإلكتروني بالفعل",
+         "credentialsMissing": "واحد أو أكثر من الحقول المطلوبة فارغة",
+         "invalidCredentials": "بيانات الاعتماد غير صحيحة. يرجى المحاولة مرة أخرى",
+         "accessDenied": "تم رفض الوصول. ليس لديك الحقوق للوصول إلى هذا المورد",
+         "emailMissing": "البريد الإلكتروني مفقود. يرجى تقديم عنوان بريد إلكتروني",
+         "tokenExpired": "انتهت صلاحية رمز الوصول. يرجى تحديث الرمز",
+         "tokenVerificationFailed": "فشل في التحقق من رمز الوصول",
+         "tokenMissing": "رمز الوصول مفقود. يرجى تقديم رمز الوصول",
+         "tokenInvalid": "رمز الوصول المقدم غير صحيح. يرجى الحصول على رمز صحيح",
+         "refreshTokenExpired": "انتهت صلاحية الجلسة. يرجى تسجيل الدخول مرة أخرى",
+         "refreshTokenVerificationFailed": "فشل في التحقق من رمز التحديث",
+         "refreshTokenMissing": "رمز التحديث مفقود. يرجى تقديم رمز التحديث",
+         "refreshTokenInvalid": "رمز التحديث غير صحيح. يرجى تسجيل الدخول مرة أخرى",
+         "authInitFailed": "فشل في تهيئة المصادقة"
+      },
+      "validation": {
+         "emailInvalid": "تنسيق عنوان البريد الإلكتروني غير صحيح",
+         "passwordMinLength": "يجب أن تكون كلمة المرور 8 أحرف على الأقل"
+      }
+   },
+   "users": {
+      "success": {
+         "retrieved": "تم استرداد المستخدم بنجاح",
+         "created": "تم إنشاء المستخدم بنجاح",
+         "updated": "تم تحديث المستخدم بنجاح",
+         "deleted": "تم حذف المستخدم بنجاح",
+         "allDeleted": "تم حذف جميع المستخدمين بنجاح"
+      },
+      "errors": {
+         "notFound": "لم يتم العثور على مستخدم بالمعلومات المقدمة",
+         "adminRoleNotFound": "لم يتم العثور على دور المدير",
+         "idExists": "معرف المستخدم موجود بالفعل"
+      },
+      "validation": {
+         "nameMinLength": "يجب أن يكون الاسم حرفين على الأقل",
+         "emailInvalid": "تنسيق عنوان البريد الإلكتروني غير صحيح",
+         "passwordMinLength": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+         "passwordConfirmationRequired": "تأكيد كلمة المرور مطلوب",
+         "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+         "roleRequired": "يرجى اختيار دور صحيح"
+      },
+      "form": {
+         "fullName": "الاسم الكامل",
+         "fullNamePlaceholder": "أدخل الاسم الكامل",
+         "image": "الصورة",
+         "email": "عنوان البريد الإلكتروني",
+         "emailPlaceholder": "أدخل عنوان البريد الإلكتروني",
+         "password": "كلمة المرور",
+         "passwordPlaceholder": "أدخل كلمة المرور",
+         "newPassword": "كلمة المرور الجديدة (اتركها فارغة للاحتفاظ بالحالية)",
+         "confirmPassword": "تأكيد كلمة المرور",
+         "confirmPasswordPlaceholder": "أكد كلمة المرور",
+         "userRole": "دور المستخدم"
+      },
+      "roles": {
+         "admin": "مدير",
+         "user": "مستخدم",
+         "moderator": "مشرف"
+      },
+      "dialogs": {
+         "createTitle": "إنشاء مستخدم جديد",
+         "createButton": "إنشاء مستخدم",
+         "viewTitle": "تفاصيل المستخدم",
+         "editTitle": "تعديل المستخدم",
+         "updateButton": "تحديث المستخدم",
+         "deleteButton": "حذف المستخدم"
+      },
+      "table": {
+         "selectAll": "تحديد الكل",
+         "selectRow": "تحديد الصف",
+         "id": "المعرف",
+         "name": "الاسم",
+         "email": "البريد الإلكتروني",
+         "role": "الدور",
+         "status": "الحالة"
+      },
+      "filters": {
+         "searchByName": "البحث بالاسم...",
+         "searchByEmail": "البحث بالبريد الإلكتروني...",
+         "filterByRole": "تصفية حسب الدور..."
+      }
+   },
+   "roles": {
+      "success": {
+         "retrieved": "تم استرداد الدور بنجاح",
+         "allRetrieved": "تم استرداد جميع الأدوار بنجاح",
+         "created": "تم إنشاء الدور بنجاح",
+         "updated": "تم تحديث الدور بنجاح",
+         "deleted": "تم حذف الدور بنجاح",
+         "allDeleted": "تم حذف جميع الأدوار",
+         "initialized": "تم تهيئة الأدوار بنجاح",
+         "assignedToUser": "تم تعيين الدور للمستخدم بنجاح",
+         "userRolesRetrieved": "تم استرداد أدوار المستخدم بنجاح",
+         "usersByRoleRetrieved": "تم استرداد المستخدمين للدور المحدد بنجاح",
+         "userRoleDeleted": "تم حذف دور المستخدم بنجاح"
+      },
+      "errors": {
+         "exists": "اسم الدور مستخدم بالفعل. يرجى اختيار اسم آخر",
+         "notFound": "لم يتم العثور على الدور",
+         "userRoleExists": "الدور المحدد للمستخدم موجود بالفعل",
+         "userRoleNotFound": "لم يتم العثور على الدور المحدد للمستخدم"
+      },
+      "validation": {
+         "nameRequired": "اسم دور مناسب مطلوب",
+         "nameMinLength": "اسم الدور يجب أن يحتوي على حرفين على الأقل"
+      },
+      "form": {
+         "name": "اسم الدور",
+         "namePlaceholder": "أدخل اسم الدور",
+         "description": "الوصف (اختياري)",
+         "descriptionPlaceholder": "أدخل وصف الدور"
+      },
+      "dialogs": {
+         "createTitle": "إنشاء دور جديد",
+         "createButton": "إنشاء دور",
+         "viewTitle": "تفاصيل الدور",
+         "editTitle": "تعديل الدور",
+         "updateButton": "تحديث الدور",
+         "deleteButton": "حذف الدور"
+      },
+      "table": {
+         "selectAll": "تحديد الكل",
+         "selectRow": "تحديد الصف",
+         "id": "المعرف",
+         "roleName": "اسم الدور",
+         "description": "الوصف",
+         "noDescription": "لا يوجد وصف"
+      },
+      "filters": {
+         "searchByName": "البحث باسم الدور...",
+         "searchByDescription": "البحث بالوصف..."
+      }
+   },
+   "system": {
+      "success": {
+         "demoSeeded": "تم تهيئة نظام العرض التوضيحي بنجاح",
+         "dataCleared": "تم مسح جميع البيانات بنجاح",
+         "fieldsSeeded": "تم تهيئة الحقول بنجاح",
+         "vehiclesSeeded": "تم تهيئة المركبات بنجاح",
+         "operatorsSeeded": "تم تهيئة المشغلين بنجاح",
+         "operationsSeeded": "تم تهيئة العمليات بنجاح",
+         "refuelsSeeded": "تم تهيئة عمليات التزويد بالوقود بنجاح"
+      },
+      "info": {
+         "seedingStarted": "بدء تهيئة بيانات العرض التوضيحي...",
+         "clearingData": "مسح جميع البيانات...",
+         "operationsCleared": "تم مسح العمليات",
+         "refuelsCleared": "تم مسح عمليات التزويد بالوقود",
+         "operatorsCleared": "تم مسح المشغلين",
+         "vehiclesCleared": "تم مسح المركبات",
+         "fieldsCleared": "تم مسح الحقول",
+         "usersCleared": "تم مسح المستخدمين"
+      },
+      "errors": {
+         "seedingDisabled": "تهيئة النظام معطلة في هذه البيئة",
+         "invalidSeedApiKey": "مفتاح API للتهيئة غير صحيح"
+      }
+   },
+   "files": {
+      "success": {
+         "retrieved": "تم استرداد الملف بنجاح",
+         "created": "تم إنشاء الملف بنجاح",
+         "updated": "تم تحديث الملف بنجاح",
+         "deleted": "تم حذف الملف بنجاح",
+         "served": "تم تقديم الملف بنجاح",
+         "streamed": "تم بث الملف بنجاح"
+      },
+      "errors": {
+         "notFound": "لم يتم العثور على الملف",
+         "nameExists": "يوجد ملف بهذا الاسم بالفعل",
+         "sizeTooLarge": "حجم الملف يتجاوز الحد الأقصى المسموح به",
+         "typeNotAllowed": "نوع الملف غير مسموح",
+         "accessDenied": "ليس لديك إذن للوصول إلى هذا الملف",
+         "uploadFailed": "فشل في رفع الملف",
+         "deleteFailed": "فشل في حذف الملف",
+         "invalidType": "نوع ملف غير صحيح",
+         "tooLarge": "حجم الملف يتجاوز الحد الأقصى المسموح به",
+         "invalidEntityType": "نوع كيان غير صحيح",
+         "entityNotFound": "لم يتم العثور على الكيان",
+         "insufficientPermissions": "أذونات غير كافية للوصول إلى هذا الملف",
+         "physicalNotFound": "لم يتم العثور على الملف الفعلي في التخزين",
+         "mimeTypeMismatch": "امتداد الملف لا يتطابق مع نوع الملف - خطر أمني محتمل",
+         "executableNotAllowed": "الملفات التنفيذية غير مسموحة لأسباب أمنية",
+         "recordNotFound": "لم يتم العثور على سجل الملف في قاعدة البيانات للمسار: {fileAbsPath}",
+         "onlyImagesAllowed": "فقط ملفات الصور مسموحة",
+         "invalidImageType": "نوع صورة غير صحيح"
+      }
+   },
+   "analytics": {
+      "success": {
+         "vehicleUsageReport": "تم إنشاء تقرير استخدام المركبات بنجاح",
+         "fuelConsumptionReport": "تم إنشاء تقرير استهلاك الوقود بنجاح",
+         "operatorPerformanceReport": "تم إنشاء تقرير أداء المشغل بنجاح",
+         "fieldOperationsReport": "تم إنشاء تقرير عمليات الحقل بنجاح",
+         "maintenanceSchedule": "تم استرداد جدول الصيانة بنجاح"
+      },
+      "errors": {
+         "insufficientData": "بيانات غير كافية متاحة لإنشاء التقرير المطلوب",
+         "invalidDateRange": "نطاق تاريخ غير صحيح محدد للتقرير",
+         "generationFailed": "فشل في إنشاء التقرير. يرجى المحاولة مرة أخرى"
+      }
+   },
+   "alerts": {
+      "success": {
+         "retrieved": "تم استرجاع التنبيهات بنجاح",
+         "created": "تم إنشاء التنبيه بنجاح",
+         "updated": "تم تحديث التنبيه بنجاح",
+         "deleted": "تم حذف التنبيه بنجاح",
+         "allDeleted": "تم حذف جميع التنبيهات",
+         "statusUpdated": "تم تحديث حالة التنبيه بنجاح",
+         "acknowledged": "تم إقرار التنبيه بنجاح",
+         "resolved": "تم حل التنبيه بنجاح",
+         "dismissed": "تم رفض التنبيه بنجاح",
+         "bulkUpdated": "تم تحديث التنبيهات مجمعة بنجاح",
+         "resolvedDeleted": "تم حذف التنبيهات المحلولة بنجاح",
+         "maintenanceAlertsGenerated": "تم إنشاء تنبيهات الصيانة بنجاح"
+      },
+      "errors": {
+         "notFound": "التنبيه غير موجود",
+         "invalidType": "نوع تنبيه غير صالح محدد",
+         "invalidStatus": "حالة تنبيه غير صالحة محددة",
+         "invalidPriority": "أولوية تنبيه غير صالحة محددة",
+         "invalidTitle": "عنوان التنبيه يجب أن يكون على الأقل حرفين",
+         "invalidMessage": "رسالة التنبيه يجب أن تكون على الأقل 5 أحرف",
+         "cannotModifyResolved": "لا يمكن تعديل التنبيهات المحلولة",
+         "cannotDeleteActive": "لا يمكن حذف التنبيهات النشطة",
+         "duplicateActiveAlert": "يوجد تنبيه نشط من هذا النوع لهذا الهدف",
+         "noAlertsSelected": "لم يتم تحديد تنبيهات للعملية الجماعية",
+         "noAlertsToDelete": "لا توجد تنبيهات للحذف",
+         "invalidStatusTransition": "انتقال حالة غير صالح من {{from}} إلى {{to}}",
+         "atLeastOneTargetRequired": "يجب تحديد هدف واحد على الأقل (مركبة، مشغل، أو مستخدم)"
+      },
+      "validation": {
+         "titleMinLength": "العنوان يجب أن يكون على الأقل حرفين",
+         "messageMinLength": "الرسالة يجب أن تكون على الأقل 5 أحرف"
+      },
+      "types": {
+         "maintenance": "صيانة",
+         "fuel": "وقود",
+         "security": "أمان",
+         "operational": "تشغيلي",
+         "system": "نظام"
+      },
+      "priorities": {
+         "low": "منخفضة",
+         "medium": "متوسطة",
+         "high": "عالية",
+         "critical": "حرجة"
+      },
+      "statuses": {
+         "active": "نشط",
+         "read": "مقروء",
+         "resolved": "محلول",
+         "dismissed": "مرفوض"
+      },
+      "form": {
+         "type": "نوع التنبيه",
+         "priority": "الأولوية",
+         "title": "العنوان",
+         "titlePlaceholder": "أدخل عنوان التنبيه",
+         "message": "الرسالة",
+         "messagePlaceholder": "أدخل رسالة التنبيه",
+         "status": "الحالة",
+         "vehicle": "المركبة (اختياري)",
+         "vehiclePlaceholder": "اختر مركبة",
+         "operator": "المشغل (اختياري)",
+         "operatorPlaceholder": "اختر مشغل"
+      },
+      "dialogs": {
+         "createTitle": "إنشاء تنبيه جديد",
+         "createButton": "إنشاء تنبيه",
+         "viewTitle": "تفاصيل التنبيه",
+         "editTitle": "تحرير التنبيه",
+         "updateButton": "تحديث التنبيه",
+         "deleteButton": "حذف التنبيه"
+      },
+      "table": {
+         "selectAll": "تحديد الكل",
+         "selectRow": "تحديد الصف",
+         "id": "المعرف",
+         "title": "العنوان",
+         "type": "النوع",
+         "priority": "الأولوية",
+         "status": "الحالة",
+         "vehicle": "المركبة",
+         "operator": "المشغل",
+         "createdAt": "تاريخ الإنشاء",
+         "readAt": "تاريخ القراءة"
+      },
+      "filters": {
+         "searchByTitle": "البحث بالعنوان...",
+         "searchByVehicle": "البحث بالمركبة...",
+         "filterByStatus": "تصفية بالحالة...",
+         "filterByType": "تصفية بالنوع...",
+         "filterByPriority": "تصفية بالأولوية..."
+      }
+   },
+   "validation": {
+      "general": {
+         "requiredFieldMissing": "حقل مطلوب مفقود",
+         "invalidDateFormat": "تنسيق تاريخ غير صحيح مقدم",
+         "invalidTimeFormat": "تنسيق وقت غير صحيح مقدم",
+         "invalidNumericValue": "قيمة رقمية غير صحيحة مقدمة",
+         "valueOutOfRange": "القيمة خارج النطاق المقبول"
+      },
+      "formats": {
+         "invalidSerialNumber": "تنسيق رقم تسلسلي غير صحيح",
+         "invalidLicensePlate": "تنسيق لوحة ترخيص غير صحيح",
+         "invalidPhoneNumber": "تنسيق رقم هاتف غير صحيح",
+         "invalidEmail": "تنسيق عنوان بريد إلكتروني غير صحيح",
+         "invalidLicenseNumber": "تنسيق رقم رخصة غير صحيح"
+      }
+   },
+   "dashboard": {
+      "widgets": {
+         "totalLiters": "إجمالي اللترات",
+         "totalFields": "إجمالي الحقول",
+         "activeVehicles": "المركبات النشطة",
+         "operationsToday": "العمليات اليوم",
+         "totalOperators": "إجمالي المشغلين",
+         "completedOperations": "العمليات المكتملة",
+         "totalWorkHours": "إجمالي ساعات العمل",
+         "totalCost": "إجمالي التكلفة"
+      },
+      "cards": {
+         "recentOperations": {
+            "title": "العمليات المكتملة مؤخرًا",
+            "noOperations": "لم يتم العثور على عمليات مكتملة مؤخرًا",
+            "errorLoadingData": "خطأ في تحميل العمليات المكتملة مؤخرًا"
+         }
+      },
+      "success": {
+         "widgetsRetrieved": "تم استرداد عناصر لوحة التحكم بنجاح"
+      }
+   },
+   "language": {
+      "success": {
+         "preferenceUpdated": "تم تحديث تفضيل اللغة بنجاح",
+         "preferenceRetrieved": "تم استرداد تفضيل اللغة بنجاح"
+      },
+      "errors": {
+         "invalid": "لغة غير صحيحة محددة"
+      }
+   },
+   "common": {
+      "notAvailable": "غير متاح",
+      "invalidDate": "تاريخ غير صحيح",
+      "loading": "جاري التحميل...",
+      "loadingCreate": "جاري الإنشاء...",
+      "loadingUpdate": "جاري التحديث...",
+      "loadingDelete": "جاري الحذف...",
+      "save": "حفظ",
+      "cancel": "إلغاء",
+      "delete": "حذف",
+      "edit": "تعديل",
+      "view": "عرض",
+      "create": "إنشاء",
+      "update": "تحديث",
+      "actions": "الإجراءات",
+      "next": "التالي",
+      "previous": "السابق",
+      "confirm": "تأكيد"
+   },
+   "status": {
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "pending": "قيد الانتظار",
+      "cancelled": "ملغى",
+      "maintenance": "صيانة",
+      "retired": "متقاعد",
+      "approved": "موافق عليه",
+      "rejected": "مرفوض",
+      "processing": "قيد المعالجة",
+      "completed": "مكتمل",
+      "draft": "مسودة",
+      "published": "منشور",
+      "planned": "مخطط",
+      "suspended": "معلق",
+      "deleted": "محذوف",
+      "archived": "مؤرشف",
+      "revoked": "ملغى",
+      "expired": "منتهي الصلاحية"
+   },
+   "navigation": {
+      "dashboard": "لوحة التحكم",
+      "fields": "الحقول",
+      "vehicles": "المركبات",
+      "operations": "العمليات",
+      "operators": "المشغلين",
+      "refuel": "التزود بالوقود",
+      "maintenance": "الصيانة",
+      "alerts": "التنبيهات",
+      "trackers": "المتتبعات",
+      "users": "المستخدمين",
+      "roles": "الأدوار",
+      "settings": "الإعدادات",
+      "logout": "تسجيل الخروج",
+      "academic": "أكاديمي",
+      "fees": "الرسوم",
+      "feeTypes": "أنواع الرسوم",
+      "financial": "المالية"
+   }
+}

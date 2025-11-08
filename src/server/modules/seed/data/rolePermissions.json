@@ -1,0 +1,108 @@
+[
+  {
+    "roleName": "admin",
+    "permissions": [
+      "*:*"
+    ]
+  },
+  {
+    "roleName": "principal",
+    "permissions": [
+      "read:students",
+      "read:teachers",
+      "read:parents",
+      "read:classes",
+      "read:subjects",
+      "read:grades"
+    ]
+  },
+  {
+    "roleName": "teacher",
+    "permissions": [
+      "read:teachers",
+      "read:students",
+      "update:students",
+      "read:parents",
+      "read:classes",
+      "read:sections",
+      "read:subjects",
+      "create:grades",
+      "read:grades",
+      "update:grades",
+      "manage:attendance"
+    ]
+  },
+  {
+    "roleName": "student",
+    "permissions": [
+      "read:students",
+      "read:parents",
+      "read:classes",
+      "read:subjects",
+      "read:grades"
+    ]
+  },
+  {
+    "roleName": "parent",
+    "permissions": [
+      "read:parents",
+      "read:students",
+      "read:classes",
+      "read:subjects",
+      "read:grades"
+    ]
+  },
+  {
+    "roleName": "counselor",
+    "permissions": [
+      "read:students",
+      "update:students",
+      "read:parents",
+      "read:classes",
+      "read:grades",
+      "manage:attendance"
+    ]
+  },
+  {
+    "roleName": "nurse",
+    "permissions": [
+      "read:students",
+      "read:parents"
+    ]
+  },
+  {
+    "roleName": "secretary",
+    "permissions": [
+      "create:students",
+      "read:students",
+      "update:students",
+      "read:parents",
+      "create:parents",
+      "update:parents",
+      "read:classes",
+      "read:teachers"
+    ]
+  },
+  {
+    "roleName": "librarian",
+    "permissions": [
+      "read:students",
+      "read:classes",
+      "read:teachers"
+    ]
+  },
+  {
+    "roleName": "driver",
+    "permissions": [
+      "read:students"
+    ]
+  },
+  {
+    "roleName": "assistant",
+    "permissions": [
+      "read:students",
+      "read:classes",
+      "read:teachers"
+    ]
+  }
+]
