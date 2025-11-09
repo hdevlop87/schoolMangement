@@ -1,837 +1,317 @@
-# Agricultural Vehicle Management System 🚜
+# Student Management System
 
-A comprehensive, full-stack agricultural management platform with modern React frontend and robust Node.js backend, designed to streamline farm operations, vehicle tracking, operator management, and resource optimization through intelligent automation and real-time analytics.
+A comprehensive, modern school management system built with Next.js and TypeScript, designed to streamline educational administration, student tracking, and parent-teacher communication.
 
-## 🌾 Project Overview
+## Features
 
-The Agricultural Vehicle Management System is a modern web application that enables agricultural enterprises to efficiently manage their entire operation ecosystem. Built with Next.js frontend and Node.js backend, the system provides real-time insights, automated workflows, and comprehensive analytics for modern farming operations.
+### Core Modules
+- **Student Management**: Complete student profiles, enrollment tracking, and academic history
+- **Teacher Management**: Staff profiles, subject assignments, and workload tracking
+- **Parent Portal**: Parent accounts with student relationship management
+- **Class Management**: Class creation, scheduling, and student enrollment
+- **Attendance Tracking**: Real-time attendance monitoring for students and teachers
+- **Grade Management**: Comprehensive assessment and grading system
+- **Fee Management**: Tuition tracking, payment processing, and fee type configuration
+- **Transport Management**: Vehicle and driver management with route tracking
+- **Expense Tracking**: School expense monitoring and financial reporting
+- **Announcements & Events**: School-wide communication and event calendar
 
-### Key Value Propositions
+### Advanced Features
+- **Dashboard Analytics**: Real-time KPIs and performance metrics
+- **Role-Based Access Control**: Admin, Teacher, Student, and Parent roles
+- **Multi-language Support**: English, French, Arabic, and Spanish
+- **Mobile-Responsive Design**: Optimized for all devices with PWA support
+- **Real-time Notifications**: Live updates for grades, attendance, and announcements
+- **File Upload System**: Document management for students and staff
+- **Advanced Reporting**: Performance analytics and trend visualization
 
-- **Operational Efficiency**: Reduce operational overhead by up to 25% through optimized resource allocation
-- **Real-time Monitoring**: Live tracking of vehicles, operations, and fuel consumption with GPS integration
-- **Cost Management**: Advanced analytics for fuel consumption, maintenance costs, and operational expenses
-- **Compliance**: Automated license tracking and certification management for operators
-- **Data-Driven Decisions**: Real-time dashboards with predictive insights for strategic planning
-- **Scalability**: Modular architecture supporting operations from small farms to large agricultural enterprises
+## Tech Stack
+
+### Frontend
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Custom component library (N-prefix components)
+- **Forms**: React Hook Form + Zod validation
+- **State Management**: Zustand (global) + React Query (server state)
+- **Charts**: Recharts
+- **Icons**: Lucide React
+
+### Backend
+- **Framework**: najm-api (custom Node.js framework)
+- **Language**: TypeScript
+- **Database**: PostgreSQL
+- **ORM**: Drizzle ORM
+- **Authentication**: JWT with refresh tokens
+- **Validation**: Zod schemas
+- **Architecture**: 4-layer pattern (Controller → Service → Repository → Validator)
+
+## Prerequisites
+
+- Node.js 18+
+- PostgreSQL 14+
+- npm or yarn package manager
+
+## Installation
+
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd dashboard
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Configure environment variables**
+Create a `.env` file in the root directory:
+```env
+# Database
+DATABASE_URL=postgresql://user:password@localhost:5432/school_db
+
+# Authentication
+JWT_SECRET=your-secret-key
+JWT_REFRESH_SECRET=your-refresh-secret-key
+
+# App
+NEXT_PUBLIC_API_URL=http://localhost:3000
+```
+
+4. **Set up the database**
+```bash
+# Generate migrations
+npm run db:generate
+
+# Push schema to database
+npm run db:push
+```
+
+5. **Start development server**
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`
+
+## Development Commands
+
+### Core Development
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build production application
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint for code quality
+
+### Database Operations
+- `npm run db:generate` - Generate database migrations from schema changes
+- `npm run db:push` - Push schema changes to database
+- `npm run db:drop` - Drop database tables (destructive)
+- `npm run db:check` - Validate database schema consistency
+
+## Project Structure
+
+```
+dashboard/
+├── src/
+│   ├── app/                    # Next.js App Router pages
+│   │   ├── (auth)/            # Authentication pages
+│   │   └── (dashboard)/       # Dashboard pages
+│   ├── features/              # Feature modules
+│   │   ├── Students/          # Student management
+│   │   ├── Teachers/          # Teacher management
+│   │   ├── Classes/           # Class management
+│   │   ├── Fees/              # Fee management
+│   │   └── ...                # Other features
+│   ├── components/            # Shared UI components
+│   │   ├── NTable/            # Advanced data table
+│   │   ├── NForm/             # Form components
+│   │   ├── NInputs/           # Input components
+│   │   └── ...                # Other components
+│   ├── server/                # Backend code
+│   │   ├── modules/           # Backend modules
+│   │   │   ├── students/      # Student module
+│   │   │   ├── teachers/      # Teacher module
+│   │   │   └── ...            # Other modules
+│   │   └── database/          # Database schema and config
+│   ├── services/              # API service layer
+│   ├── hooks/                 # Custom React hooks
+│   ├── stores/                # Global state management
+│   ├── lib/                   # Utilities and helpers
+│   └── locales/               # i18n translations
+├── public/                    # Static assets
+└── ...config files
+```
+
+## Architecture
+
+### Backend Architecture
+
+**4-Layer Pattern:**
+```
+Controller → Service → Repository → Validator
+```
+
+- **Controllers**: Handle HTTP requests/responses
+- **Services**: Business logic implementation
+- **Repositories**: Database operations (Drizzle ORM)
+- **Validators**: Input validation and business rules
+
+### Frontend Architecture
+
+**Feature-Based Structure:**
+- Each feature module contains components, hooks, and configurations
+- Shared component library with N-prefix naming convention
+- Consistent patterns across all entities using `useEntityCRUD` hook
+
+## Key Features Explained
+
+### Authentication & Authorization
+- JWT-based authentication with refresh tokens
+- Role-based access control (Admin, Teacher, Student, Parent)
+- Secure session management
+- Password encryption
+
+### Data Tables (NTable)
+- Advanced sorting and filtering
+- Column visibility controls
+- Responsive design with automatic card/table toggle
+- Bulk operations support
+- Mobile-first approach
+
+### Form System (NForm)
+- React Hook Form integration
+- Zod validation schemas
+- Automatic error handling
+- Toast notifications
+- TypeScript type safety
+
+### State Management
+- **Server State**: React Query for API data caching
+- **Global State**: Zustand for UI and auth state
+- **Form State**: React Hook Form for form handling
+
+## User Roles
+
+1. **Admin**: Full system access, user management, system configuration
+2. **Teacher**: Class management, grading, attendance tracking
+3. **Student**: View grades, attendance, assignments, announcements
+4. **Parent**: Monitor children's academic progress and attendance
+
+## Default Credentials
+
+After initial setup, use these credentials to log in:
+- **Admin**: (will be created during seed process)
+
+## Database Schema
+
+### Core Entities
+- Users (Admin, Teachers, Students, Parents)
+- Classes and Sections
+- Subjects and Assessments
+- Attendance Records
+- Grades and Evaluations
+- Fee Types and Payments
+- Vehicles and Drivers
+- Announcements and Events
+- Files and Documents
+
+### Key Relationships
+- Students belong to Classes
+- Classes have Teachers and Subjects
+- Parents are linked to Students
+- Attendance tracked per Class
+- Grades linked to Assessments
+
+## API Documentation
+
+API endpoints follow RESTful conventions:
+
+```
+GET    /api/students          # Get all students
+GET    /api/students/:id      # Get student by ID
+POST   /api/students          # Create student
+PUT    /api/students/:id      # Update student
+DELETE /api/students/:id      # Delete student
+```
+
+Similar patterns apply to all entities (teachers, classes, fees, etc.)
+
+## Internationalization
+
+Supported languages:
+- English (en)
+- French (fr)
+- Arabic (ar)
+- Spanish (es)
+
+Translation files located in `src/locales/`
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Development Guidelines
+- Follow TypeScript strict mode
+- Use ESLint for code quality
+- Maintain consistent naming conventions
+- Add proper error handling
+- Write meaningful commit messages
+
+## Security
+
+- Password hashing with secure algorithms
+- JWT token-based authentication
+- Input validation and sanitization
+- Role-based access control
+- Secure file upload handling
+- CORS configuration
+
+## Performance Optimization
+
+- React Query caching strategies
+- Lazy loading for large datasets
+- Image optimization
+- Code splitting and bundle optimization
+- Database query optimization with proper indexing
+- Mobile performance considerations
+
+## Troubleshooting
+
+### Common Issues
+
+**Database connection errors:**
+- Verify PostgreSQL is running
+- Check DATABASE_URL in .env file
+- Ensure database exists
+
+**Build errors:**
+- Clear node_modules and reinstall: `rm -rf node_modules && npm install`
+- Clear Next.js cache: `rm -rf .next`
+
+**Authentication issues:**
+- Verify JWT secrets are set in .env
+- Check token expiration settings
+
+## License
+
+[Add your license information here]
+
+## Support
+
+For support, please contact [your-email@example.com] or open an issue in the repository.
+
+## Acknowledgments
+
+- Built with Next.js and TypeScript
+- UI components inspired by shadcn/ui
+- Backend powered by najm-api framework
 
 ---
 
-## 🎨 Frontend Architecture
-
-### Technology Stack
-
-- **Framework**: Next.js 14+ with TypeScript
-- **Styling**: Tailwind CSS with custom component library
-- **State Management**: Zustand for global state, React Query for server state
-- **Forms**: React Hook Form with Zod validation
-- **Charts**: Recharts for data visualization
-- **UI Components**: Custom component library with shadcn/ui base
-- **Internationalization**: Multi-language support (i18n)
-
-### 📱 Page Structure & Features
-
-#### **Authentication Pages**
-
-- **Login Page** (`/login`)
-  
-  - Secure authentication with JWT tokens
-  - Form validation with error handling
-  - Password recovery integration
-
-- **Register Page** (`/register`)
-  
-  - User registration with role assignment
-  - Email verification workflow
-
-- **Password Recovery**
-  
-  - Forgot password dialog component
-  - Email-based password reset
-
-#### **Main Dashboard** (`/dashboard`)
-
-**Components Used:**
-
-- `InfoWidgets` - Real-time KPI widgets
-- `Charts` - Data visualization components
-- `TrackerMap` - Live GPS tracking map
-
-**Key Metrics Displayed:**
-
-- Total fuel consumption (liters)
-- Total fields managed
-- Active vehicles count
-- Today's operations count
-- Total operators registered
-
-#### **Fields Management** (`/fields`)
-
-**Components:**
-
-- `FieldsTable` - Comprehensive fields listing with sorting/filtering
-- `FieldForm` - Create/edit field forms with validation
-
-**Features:**
-
-- Field area calculations and statistics
-- Operation history per field
-- Utilization analytics
-- Size-based categorization
-
-#### **Vehicles Management** (`/vehicles`)
-
-**Components:**
-
-- `VehiclesTable` - Fleet inventory with status tracking
-- `VehicleForm` - Vehicle registration and updates
-- `VehicleStatusChart` - Status distribution visualization
-- `VehicleTypeChart` - Fleet composition analysis
-- `VehicleUtilizationChart` - Utilization metrics
-
-**Features:**
-
-- Real-time vehicle status monitoring
-- Maintenance scheduling alerts
-- Fleet analytics and reporting
-- Serial number and license plate tracking
-
-#### **Operations Management** (`/operations`)
-
-**Components:**
-
-- `OperationsTable` - Operation lifecycle management
-- `OperationForm` - Operation planning and execution
-
-**Features:**
-
-- Operation lifecycle tracking (planned → active → completed)
-- Real-time progress monitoring
-- Cross-module validation (vehicle, operator, field)
-- Performance analytics and efficiency calculations
-
-#### **Operators Management** (`/operators`)
-
-**Components:**
-
-- Operator listing and management interface
-- License tracking and certification monitoring
-- Performance analytics dashboard
-
-**Features:**
-
-- License expiration alerts
-- Performance tracking and skill assessment
-- Status management (active, inactive, suspended)
-- Operation history and efficiency metrics
-
-#### **Fuel Management** (`/refuel`)
-
-**Components:**
-
-- Fuel transaction recording interface
-- Cost analysis and efficiency reporting
-- Consumption analytics dashboard
-
-**Features:**
-
-- Real-time fuel consumption tracking
-- Cost per operation analysis
-- Vehicle efficiency monitoring
-- Monthly trend analysis
-
-#### **Vehicle Tracking** (`/trackers`)
-
-**Components:**
-
-- GPS tracker management interface
-- Real-time location monitoring
-- Online/offline status tracking
-
-**Features:**
-
-- Live GPS tracking with map integration
-- Device management and configuration
-- Status monitoring (online, offline)
-- Bulk operations for fleet management
-
-#### **User & Role Management** (`/users`, `/roles`)
-
-**Components:**
-
-- User management interface
-- Role assignment and permissions
-- Language preferences
-
-**Features:**
-
-- Multi-role user management
-- Dynamic role assignment
-- Language localization support
-- User activity tracking
-
-#### **Settings** (`/settings`)
-
-- System configuration
-- User preferences
-- Language settings
-
-### 🔧 Frontend Architecture Patterns
-
-#### **Feature-Based Structure**
-
-```
-src/
-├── features/
-│   ├── Dashboard/
-│   │   ├── components/       # UI components
-│   │   ├── hooks/           # Feature-specific hooks
-│   │   ├── InfoWidgets/     # Widget components
-│   │   └── Charts/          # Chart components
-│   ├── Fields/
-│   │   ├── components/      # FieldsTable, FieldForm
-│   │   ├── hooks/          # useFields hook
-│   │   └── config/         # Table columns, validation schema
-│   ├── Vehicles/
-│   │   ├── components/      # VehiclesTable, Charts
-│   │   ├── hooks/          # useVehicles hook
-│   │   └── config/         # Configuration files
-│   └── [Other Features]...
-```
-
-#### **Shared Hook Pattern - `useEntityCRUD`**
-
-All features use a standardized CRUD hook pattern:
-
-```typescript
-// Example: useFields hook
-const {
-  fields,              // Data array
-  isFieldsLoading,     // Loading state
-  createField,         // Create function
-  updateField,         // Update function
-  deleteField,         // Delete function
-  refetch              // Refresh data
-} = useFields();
-```
-
-**Benefits:**
-
-- Consistent API interaction patterns
-- Automatic error handling with toast notifications
-- Optimistic UI updates with React Query
-- Cache invalidation and synchronization
-
-#### **Component Library Structure**
-
-```
-components/
-├── ui/                      # shadcn/ui base components
-├── NTable/                  # Advanced table component
-├── NForm/                   # Form components with validation
-├── NDialogForm/             # Modal forms
-├── NButtons/                # Button variants
-├── NInputs/                 # Input components
-├── NBadge/                  # Status badges
-├── NStatusBadge/            # Status indicators
-├── NSidebar/                # Navigation sidebar
-├── Nnavbar/                 # Top navigation
-└── BaseChart.tsx            # Chart base component
-```
-
-### 🔄 Frontend Data Flow
-
-#### **API Communication Layer**
-
-Each module has dedicated API service files:
-
-- `authApi.ts` - Authentication endpoints
-- `fieldApi.ts` - Fields management
-- `vehicleApi.ts` - Vehicle operations
-- `operationApi.ts` - Operations management
-- `operatorApi.ts` - Operator management
-- `refuelApi.ts` - Fuel tracking
-- `trackerApi.ts` - GPS tracking
-- `userApi.ts` - User management
-- `roleApi.ts` - Role management
-- `fileApi.ts` - File operations
-- `dashboardApi.ts` - Dashboard data
-
-#### **State Management Architecture**
-
-```
-Frontend State Management:
-├── React Query              # Server state & caching
-│   ├── API data caching
-│   ├── Background updates
-│   └── Error handling
-├── Zustand Stores          # Global client state
-│   ├── AuthStore           # Authentication state
-│   ├── DialogStore         # Modal management
-│   ├── TrackerStore        # GPS tracking state
-│   └── ForgotPasswordStore # Password recovery
-└── React Hook Form         # Form state management
-```
-
----
-
-## 🛠️ Backend Architecture
-
-### Technology Stack
-
-- **Framework**: Node.js with najm-api framework
-- **Database**: SQL with repository pattern
-- **Authentication**: JWT with role-based access control
-- **Validation**: Multi-layer validation system
-- **Internationalization**: Built-in translation support
-- **Security**: Admin guards and input sanitization
-
-### 🏗️ Backend Architecture Pattern
-
-**4-Layer Architecture**
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Controller Layer                         │
-│  - HTTP Request Handling (@Controller, @Get, @Post)        │
-│  - Route Management & Parameter Binding                    │
-│  - Response Formatting & Error Handling                    │
-└─────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────┐
-│                     Service Layer                          │
-│  - Business Logic Implementation                           │
-│  - Cross-Module Validation & Integration                   │
-│  - Data Processing & Transformation                        │
-└─────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────┐
-│                   Repository Layer                         │
-│  - Database Operations & Query Building                    │
-│  - Data Mapping & ORM Integration                          │
-│  - Transaction Management                                   │
-└─────────────────────────────────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────┐
-│                   Validation Layer                         │
-│  - Input Validation & Sanitization                        │
-│  - Business Rule Enforcement                               │
-│  - Data Integrity Checks                                   │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### 📋 Complete API Documentation
-
-#### **Authentication & Session Management**
-
-```http
-POST   /auth/register             # Register new user account
-POST   /auth/login               # Authenticate user login
-GET    /auth/refresh             # Refresh JWT access tokens
-GET    /auth/logout/:id          # User logout and session cleanup
-GET    /auth/me                  # Get current user profile
-POST   /auth/forgot-password     # Initiate password recovery
-```
-
-#### **User & Role Management**
-
-```http
-# User Management
-GET    /users                    # List all system users
-GET    /users/:id                # Get specific user details
-GET    /users/email/:email       # Find user by email address
-GET    /users/role/:userId       # Get user's assigned role
-GET    /users/lang               # Get current language preference
-POST   /users                    # Create new user account
-PUT    /users/:id                # Update user information
-DELETE /users/:id                # Delete user account
-DELETE /users                    # Delete all users (admin)
-POST   /users/assign/:userId/:roleId  # Assign role to user
-DELETE /users/remove/:userId      # Remove role from user
-POST   /users/lang/:language     # Update user language
-
-# Role Management
-GET    /roles                    # List all available roles
-GET    /roles/:id                # Get specific role details
-POST   /roles                    # Create new role
-PUT    /roles/:id                # Update role permissions
-DELETE /roles/:id                # Delete role
-```
-
-#### **Fields Management**
-
-```http
-# Core CRUD Operations
-GET    /fields                    # List all agricultural fields
-POST   /fields                    # Create new field entry
-GET    /fields/:id                # Get specific field details
-PUT    /fields/:id                # Update field information
-DELETE /fields/:id                # Remove field record
-DELETE /fields                    # Delete all fields (admin)
-
-# Field Analytics & Insights
-GET    /fields/count              # Total field count
-GET    /fields/total-area         # Total and average area statistics
-GET    /fields/by-size           # Fields sorted by size
-GET    /fields/large             # Large fields (>10 hectares)
-GET    /fields/small             # Small fields (<5 hectares)
-GET    /fields/active-operations  # Fields with ongoing operations
-GET    /fields/name/:name         # Find field by name
-GET    /fields/:id/operations     # Complete field operation history
-GET    /fields/:id/statistics     # Field performance analytics
-GET    /fields/:id/utilization    # Field utilization metrics
-POST   /fields/seed               # Seed demonstration data
-```
-
-#### **Vehicle Fleet Management**
-
-```http
-# Core Fleet Operations
-GET    /vehicles                  # Complete fleet inventory
-POST   /vehicles                  # Register new vehicle
-GET    /vehicles/:id              # Detailed vehicle information
-PUT    /vehicles/:id              # Update vehicle details
-PUT    /vehicles/:id/status       # Update vehicle status
-DELETE /vehicles/:id              # Remove vehicle from fleet
-DELETE /vehicles                  # Delete all vehicles (admin)
-
-# Fleet Filtering & Lookup
-GET    /vehicles/count            # Total vehicle count
-GET    /vehicles/types            # Available vehicle types
-GET    /vehicles/by-type/:type    # Filter vehicles by type
-GET    /vehicles/active           # Currently active vehicles
-GET    /vehicles/maintenance      # Vehicles requiring maintenance
-GET    /vehicles/serial/:serialNumber    # Find by serial number
-GET    /vehicles/license/:licensePlate   # Find by license plate
-
-# Advanced Fleet Analytics
-GET    /vehicles/analytics/in-use           # Vehicles currently operational
-GET    /vehicles/analytics/status-distribution    # Fleet status breakdown
-GET    /vehicles/analytics/type-distribution      # Vehicle type analysis
-GET    /vehicles/analytics/age-analysis          # Fleet age distribution
-GET    /vehicles/analytics/fuel-distribution     # Fuel type usage
-GET    /vehicles/analytics/brand-analysis        # Brand performance analysis
-GET    /vehicles/analytics/utilization           # Fleet utilization metrics
-POST   /vehicles/seed             # Generate demo vehicle data
-```
-
-#### **Operations Lifecycle Management**
-
-```http
-# Core Operations Management
-GET    /operations                # List all operations
-POST   /operations                # Create new operation
-GET    /operations/:id            # Operation details and status
-PUT    /operations/:id            # Update operation parameters
-DELETE /operations/:id            # Remove operation record
-DELETE /operations                # Delete all operations (admin)
-
-# Operation Lifecycle Control
-PUT    /operations/:id/start      # Start operation execution
-PUT    /operations/:id/complete   # Mark operation completed
-PUT    /operations/:id/cancel     # Cancel scheduled operation
-GET    /operations/:id/duration   # Calculate operation duration
-
-# Operation Filtering & Analytics
-GET    /operations/count          # Total operations count
-GET    /operations/operation-types # Available operation types
-GET    /operations/today          # Today's scheduled operations
-GET    /operations/status/:status # Filter by operation status
-GET    /operations/date/:date     # Operations by specific date
-GET    /operations/vehicle/:vehicleId     # Vehicle operation history
-GET    /operations/operator/:operatorId   # Operator assignment history
-GET    /operations/field/:fieldId        # Field operation chronology
-GET    /operations/type/:operationType    # Filter by operation type
-```
-
-#### **Operators & Workforce Management**
-
-```http
-# Core Operator Management
-GET    /operators                 # List all operators
-POST   /operators                 # Register new operator
-GET    /operators/:id             # Operator profile and details
-PUT    /operators/:id             # Update operator information
-PUT    /operators/:id/status      # Update operator work status
-DELETE /operators/:id             # Remove operator record
-DELETE /operators                 # Delete all operators (admin)
-
-# Operator Status & Compliance
-GET    /operators/count           # Total operator count
-GET    /operators/active          # Currently active operators
-GET    /operators/inactive        # Inactive operator list
-GET    /operators/suspended       # Suspended operators
-GET    /operators/license-expiring # License expiration alerts
-GET    /operators/license/:licenseNumber  # Find by license number
-
-# Performance & History Analytics
-GET    /operators/:id/operations  # Operator's complete operation history
-GET    /operators/:id/performance # Performance metrics and ratings
-POST   /operators/seed            # Generate demo operator data
-```
-
-#### **Fuel Management & Cost Analytics**
-
-```http
-# Core Fuel Recording
-GET    /refuel                    # Complete fuel transaction history
-POST   /refuel                    # Record new fuel transaction
-GET    /refuel/:id                # Detailed transaction record
-PUT    /refuel/:id                # Update transaction details
-DELETE /refuel/:id                # Remove transaction record
-DELETE /refuel                    # Delete all fuel records (admin)
-
-# Fuel Data Filtering
-GET    /refuel/count              # Total transaction count
-GET    /refuel/recent             # Recent refueling activities
-GET    /refuel/today              # Today's fuel transactions
-GET    /refuel/date/:date         # Transactions by specific date
-GET    /refuel/vehicle/:vehicleId # Vehicle-specific fuel history
-GET    /refuel/operator/:operatorId # Operator refueling patterns
-GET    /refuel/voucher/:voucherNumber # Find transaction by voucher
-
-# Advanced Fuel Analytics
-GET    /refuel/analytics/consumption      # Fleet consumption analysis
-GET    /refuel/analytics/efficiency       # Fuel efficiency metrics
-GET    /refuel/analytics/costs            # Comprehensive cost breakdown
-GET    /refuel/analytics/summary          # Executive summary statistics
-GET    /refuel/vehicle/:vehicleId/efficiency # Individual vehicle efficiency
-GET    /refuel/vehicle/:vehicleId/costs   # Vehicle-specific cost analysis
-GET    /refuel/trends/monthly             # Monthly consumption trends
-```
-
-#### **Vehicle GPS Tracking & Monitoring**
-
-```http
-# Core Tracker Management
-GET    /trackers                  # List all GPS trackers
-POST   /trackers                  # Register new tracking device
-GET    /trackers/:id              # Tracker details and status
-PUT    /trackers/:id              # Update tracker configuration
-PUT    /trackers/:id/status       # Update tracker status
-DELETE /trackers/:id              # Remove tracker device
-DELETE /trackers                  # Delete all trackers (admin)
-
-# Real-time Monitoring
-GET    /trackers/count            # Total tracker count
-GET    /trackers/online           # Currently online trackers
-GET    /trackers/offline          # Offline tracker detection
-GET    /trackers/status/:status   # Filter by connection status
-GET    /trackers/vehicle/:vehicleId # Vehicle-specific tracker
-GET    /trackers/device/:deviceId # Find tracker by device ID
-
-# Bulk Fleet Operations
-PUT    /trackers/bulk             # Bulk update multiple trackers
-PUT    /trackers/offline/mark     # Mark inactive trackers offline
-POST   /trackers/seed             # Generate demo tracking data
-```
-
-#### **File & Document Management**
-
-```http
-# Core File Operations
-GET    /files                     # List all managed files
-POST   /files                     # Upload new document/file
-GET    /files/:id                 # File metadata and details
-DELETE /files/:fileName           # Delete file by filename
-
-# Advanced File Operations
-GET    /files/path/:path          # Retrieve file by system path
-GET    /files/entity/:entityType/:entityId # Files linked to entities
-PUT    /files/entity/:id          # Update file entity associations
-DELETE /files/path/:path          # Delete file by path
-GET    /files/serve/:fileName     # Serve file content with headers
-```
-
-#### **Dashboard & Business Intelligence**
-
-```http
-# Dashboard Data Aggregation
-GET    /dashboard/widgets         # Real-time dashboard KPI widgets
-GET    /dashboard/operations/distribution # Operation type distribution
-
-# System Analytics
-GET    /roles                     # Available system roles
-POST   /roles                     # Create custom roles
-GET    /roles/:id                 # Role permissions and details
-PUT    /roles/:id                 # Update role configuration
-DELETE /roles/:id                 # Remove system role
-```
-
----
-
-## 🏗️ Frontend Component Architecture
-
-### **Feature Components Pattern**
-
-Each feature follows a consistent structure:
-
-```typescript
-Feature/
-├── components/
-│   ├── [Entity]Table.tsx     # Data table with CRUD operations
-│   ├── [Entity]Form.tsx      # Create/edit forms
-│   └── [Entity]Chart.tsx     # Data visualization components
-├── hooks/
-│   └── use[Entity].tsx       # Feature-specific data hooks
-├── config/
-│   ├── tableColumns.tsx      # Table configuration
-│   ├── tableConfig.tsx       # Display settings
-│   └── validateSchema.ts     # Form validation schemas
-```
-
-### **Shared Component Library**
-
-#### **Data Tables (`NTable`)**
-
-- Advanced sorting, filtering, and pagination
-- Bulk selection and operations
-- Responsive design with mobile optimization
-- Export capabilities and data visualization
-
-#### **Forms (`NForm`, `NDialogForm`)**
-
-- React Hook Form integration with Zod validation
-- Real-time validation and error display
-- Modal and inline form variants
-- Auto-save and draft management
-
-#### **Status Management (`NStatusBadge`)**
-
-- Dynamic status indicators with color coding
-- Real-time status updates
-- Hover tooltips with detailed information
-
-#### **Navigation (`NSidebar`, `Nnavbar`)**
-
-- Role-based navigation visibility
-- Real-time notification indicators
-- Multi-language menu support
-- Responsive mobile navigation
-
-### **State Management Strategy**
-
-#### **Server State (React Query)**
-
-- Automatic caching and synchronization
-- Background data updates
-- Optimistic UI updates
-- Error boundary integration
-
-#### **Global State (Zustand)**
-
-- `AuthStore` - User authentication and permissions
-- `DialogStore` - Modal and dialog management
-- `TrackerStore` - GPS tracking and real-time updates
-- `ForgotPasswordStore` - Password recovery workflow
-
-### **Data Visualization Components**
-
-#### **Dashboard Charts**
-
-- Real-time KPI widgets with live updates
-- Vehicle utilization and status distribution
-- Operation performance and efficiency trends
-- Fuel consumption analysis with cost breakdowns
-
-#### **Feature-Specific Charts**
-
-- Vehicle analytics (status, type, utilization, fuel distribution)
-- Field productivity and utilization metrics
-- Operator performance tracking and comparisons
-- Fuel efficiency trends and cost analysis
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- **Node.js** (v18.0.0 or higher)
-- **Database**: PostgreSQL/MySQL
-- **Package Manager**: npm/yarn/bun
-
-### Frontend Development Setup
-
-1. **Install Dependencies**
-   
-   ```bash
-   cd dashboard
-   npm install
-   # or
-   bun install
-   ```
-
-2. **Environment Configuration**
-   
-   ```bash
-   cp .env.example .env
-   # Configure API endpoints and authentication
-   ```
-
-3. **Start Development Server**
-   
-   ```bash
-   npm run dev
-   # Frontend runs on http://localhost:3000
-   ```
-
-### Backend Development Setup
-
-1. **Database Setup**
-   
-   ```bash
-   npm run db:migrate
-   npm run db:seed
-   ```
-
-2. **Start Backend Server**
-   
-   ```bash
-   npm run server:dev
-   # API server runs on configured port
-   ```
-
----
-
-## 💼 Frontend Feature Overview
-
-### **Dashboard Analytics**
-
-- **Real-time Widgets**: Live KPIs for fuel, fields, vehicles, operations, operators
-- **Interactive Charts**: Operation distribution, vehicle utilization, performance trends
-- **GPS Tracking Map**: Real-time vehicle location monitoring
-
-### **Resource Management Pages**
-
-- **Fields Management**: Interactive table with area calculations, operation history, utilization analytics
-- **Vehicle Fleet**: Comprehensive fleet management with status tracking, maintenance alerts, analytics charts
-- **Operator Workforce**: Certification tracking, performance metrics, license expiration monitoring
-
-### **Operations Control Center**
-
-- **Operation Planning**: Multi-resource validation and scheduling
-- **Lifecycle Management**: Real-time operation tracking from planned to completed
-- **Performance Analytics**: Efficiency calculations and productivity insights
-
-### **Financial Tracking**
-
-- **Fuel Management**: Transaction recording with voucher tracking
-- **Cost Analytics**: Vehicle-specific efficiency and cost analysis
-- **Trend Analysis**: Monthly consumption patterns and budget forecasting
-
-### **System Administration**
-
-- **User Management**: Multi-role user administration with language preferences
-- **Role Configuration**: Dynamic role creation and permission management
-- **File Management**: Document upload, organization, and entity associations
-
----
-
-## 🔄 Frontend-Backend Communication Flow
-
-### **API Service Layer Pattern**
-
-```typescript
-// Example: Field API Service
-export const getFieldsApi = async () => {
-  const res = await api.get('/fields');
-  return res.data;
-};
-
-export const createFieldApi = async (data: any) => {
-  const res = await api.post('/fields', data);
-  return res.data;
-};
-```
-
-### **Feature Hook Integration**
-
-```typescript
-// Feature Hook using API services
-export const useFields = () => {
-  const crud = useEntityCRUD('fields', {
-    getAll: fieldApi.getFieldsApi,
-    create: fieldApi.createFieldApi,
-    update: fieldApi.updateFieldApi,
-    delete: fieldApi.deleteFieldApi,
-  });
-
-  return {
-    fields: crud.data,
-    createField: crud.useCreate(),
-    updateField: crud.useUpdate(),
-    deleteField: crud.useDelete(),
-  };
-};
-```
-
-### **Component Data Binding**
-
-```typescript
-// Table component using feature hook
-const FieldsTable = () => {
-  const { fields, createField, updateField, deleteField } = useFields();
-
-  return (
-    <NTable
-      data={fields}
-      onEdit={updateField}
-      onDelete={deleteField}
-      onCreate={createField}
-    />
-  );
-};
-```
-
----
-
-## 📊 Advanced Features
-
-### **Real-time Capabilities**
-
-- Live GPS tracking with WebSocket integration
-- Real-time operation status updates
-- Automatic cache invalidation and UI synchronization
-- Push notifications for critical alerts
-
-### **Analytics & Reporting**
-
-- Interactive data visualization with Recharts
-- Exportable reports in multiple formats
-- Predictive analytics for maintenance and costs
-- Performance benchmarking across operations
-
-### **Mobile Responsiveness**
-
-- Fully responsive design with Tailwind CSS
-- Touch-optimized interfaces for field use
-- Offline capability for critical operations
-- Progressive Web App (PWA) features
-
----
-
-## 🛡️ Security & Performance
-
-### **Frontend Security**
-
-- JWT token management with automatic refresh
-- Role-based component rendering
-- Input sanitization and XSS protection
-- Secure file upload with validation
-
-### **Performance Optimization**
-
-- React Query caching and background updates
-- Component lazy loading and code splitting
-- Image optimization and responsive assets
-- Efficient re-rendering with React patterns
-
----
-
-**Transform your agricultural operations with modern web technology and intelligent automation.** 
-
-*Built for scalability, designed for usability, optimized for performance.*
+**Version**: 1.0.0
+**Last Updated**: 2025
